@@ -2,8 +2,8 @@
 
 ## Student Information
 
-- Name: [Your Full Name]
-- Student Number: [Your Student Number]
+- Name: Jaden Nell
+- Student Number: ST10502027
 - Module: WEDE5020
 - Project: BeeReady Website
 - Current Phase: Part 2 - CSS Styling and Responsive Design
