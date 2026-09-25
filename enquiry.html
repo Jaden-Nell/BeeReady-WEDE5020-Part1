@@ -1,83 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>BeeReady | Enquiry</title>
+</head>
+
 <body>
 
-    <!-- Website Header and Navigation -->
-    <header>
-        <nav>
+<div class="announcement-bar">
+    <p>Free shipping on all orders over R1000</p>
+</div>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="header-logo">
+            <img
+                src="images/logo/beeready-logo.png"
+                alt="BeeReady logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+
             <a href="index.html">Home</a>
+
             <a href="about.html">About</a>
-            <a href="products.html">Products</a>
+
+            <a href="products.html">Shop</a>
+
             <a href="faq.html">FAQ</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
+
+            <a href="contact.html">Contact us</a>
+
         </nav>
-    </header>
+
+        <a
+            href="enquiry.html"
+            class="header-button header-button-active">
+
+            Enquire
+
+        </a>
+
+    </div>
+
+</header>
 
     <!-- Main Website Content -->
     <main>
 
-    <!-- Enquiry Introduction -->
-    <section>
-        <h1>Make an Enquiry</h1>
+        <!-- Enquiry Page Hero -->
+        <section class="page-hero">
 
-        <p>
-            Interested in BeeReady or want to know more about the product?
-            Complete the form below and BeeReady can get in touch with you.
-        </p>
-    </section>
+            <p class="section-label">GET IN TOUCH</p>
 
-    <!-- Enquiry Form -->
-    <section>
-        <h2>Enquiry Form</h2>
+            <h1>Make an Enquiry</h1>
 
-        <form>
+            <p>
+                Interested in BeeReady or want to know more about the product?
+                Complete the enquiry form below.
+            </p>
 
-            <label for="name">Full Name:</label>
-            <br>
-            <input type="text" id="name" name="name">
-            <br><br>
+        </section>
 
-            <label for="email">Email Address:</label>
-            <br>
-            <input type="email" id="email" name="email">
-            <br><br>
 
-            <label for="phone">Phone Number:</label>
-            <br>
-            <input type="tel" id="phone" name="phone">
-            <br><br>
+        <!-- Enquiry Form Section -->
+        <section class="enquiry-layout">
 
-            <label for="enquiry-type">Enquiry Type:</label>
-            <br>
-            <select id="enquiry-type" name="enquiry-type">
-                <option value="">Please select an option</option>
-                <option value="product">Product Information</option>
-                <option value="purchase">Where to Purchase</option>
-                <option value="general">General Enquiry</option>
-            </select>
-            <br><br>
+            <div class="enquiry-intro">
 
-            <label for="message">Message:</label>
-            <br>
-            <textarea id="message" name="message" rows="6" cols="40"></textarea>
-            <br><br>
+                <p class="section-label">ENQUIRY FORM</p>
 
-            <button type="submit">Submit Enquiry</button>
+                <h2>How Can We Help?</h2>
 
-        </form>
-    </section>
+                <p>
+                    Use the form to ask about the BeeReady product,
+                    purchasing information or any other general questions.
+                </p>
 
-</main>
+            </div>
 
-    <!-- Website Footer -->
-    <footer>
-        <p>&copy; 2026 BeeReady. All rights reserved.</p>
+            <div class="form-card">
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="enquiry-type">Enquiry Type</label>
+
+                        <select id="enquiry-type" name="enquiry-type">
+
+                            <option value="">
+                                Please select an option
+                            </option>
+
+                            <option value="product">
+                                Product Information
+                            </option>
+
+                            <option value="purchase">
+                                Where to Purchase
+                            </option>
+
+                            <option value="general">
+                                General Enquiry
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Type your message here"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="form-submit">
+                        Submit Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         Footer
+    ========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+
+            <!-- Yellow Dot Pattern -->
+
+            <div class="footer-dots"></div>
+
+
+            <!-- Mascot -->
+
+            <img
+                src="images/general/beeready-mascot.png"
+                alt="BeeReady bee mascot"
+                class="footer-mascot">
+
+
+            <!-- Footer Navigation -->
+
+            <nav
+                class="footer-nav"
+                aria-label="Footer navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="products.html">
+                    Shop
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </nav>
+
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 BeeReady. All rights reserved.
+            </p>
+
+        </div>
+
     </footer>
 
 </body>
+
 </html>

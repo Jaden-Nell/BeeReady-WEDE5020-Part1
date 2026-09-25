@@ -1,86 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>BeeReady | FAQ</title>
+</head>
+
 <body>
 
-    <!-- Website Header and Navigation -->
-    <header>
-        <nav>
+<div class="announcement-bar">
+    <p>Free shipping on all orders over R1000</p>
+</div>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="header-logo">
+            <img
+                src="images/logo/beeready-logo.png"
+                alt="BeeReady logo">
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+
             <a href="index.html">Home</a>
+
             <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="faq.html">FAQ</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
+
+            <a href="products.html">Shop</a>
+
+            <a href="faq.html" class="active">
+                FAQ
+            </a>
+
+            <a href="contact.html">Contact us</a>
+
         </nav>
-    </header>
+
+        <a href="enquiry.html" class="header-button">
+            Enquire
+        </a>
+
+    </div>
+
+</header>
+
 
     <!-- Main Website Content -->
     <main>
 
-    <!-- Frequently Asked Questions -->
-    <section>
-        <h1>Frequently Asked Questions</h1>
+        <!-- FAQ Page Hero -->
+        <section class="page-hero">
 
-        <p>
-            Find answers to some common questions about BeeReady
-            and the BeeReady honey snap pack.
-        </p>
-    </section>
+            <p class="section-label">NEED TO KNOW</p>
 
-    <!-- FAQ Question 1 -->
-    <section>
-        <h2>What is BeeReady?</h2>
+            <h1>Frequently Asked Questions</h1>
 
-        <p>
-            BeeReady is a South African wellness business that
-            offers snap pack honey sachets infused with reishi
-            mushroom and quercetin.
-        </p>
-    </section>
+            <p>
+                Find answers to some common questions about BeeReady
+                and the BeeReady honey snap pack.
+            </p>
 
-    <!-- FAQ Question 2 -->
-    <section>
-        <h2>What ingredients are used?</h2>
+        </section>
 
-        <p>
-            The main ingredients include honey, reishi mushroom
-            and quercetin.
-        </p>
-    </section>
 
-    <!-- FAQ Question 3 -->
-    <section>
-        <h2>Is the product easy to carry?</h2>
+        <!-- FAQ Questions -->
+        <section class="faq-section">
 
-        <p>
-            Yes. The snap pack format is designed to be small,
-            convenient and easy to carry in a pocket, schoolbag
-            or laptop bag.
-        </p>
-    </section>
+            <div class="faq-heading">
 
-    <!-- FAQ Question 4 -->
-    <section>
-        <h2>Where can I purchase BeeReady?</h2>
+                <p class="section-label">FAQ</p>
 
-        <p>
-            Customers can make an enquiry for more information
-            about where BeeReady products can currently be purchased.
-        </p>
+                <h2>Common Questions</h2>
 
-        <a href="enquiry.html">Make an Enquiry</a>
-    </section>
+            </div>
 
-</main>
+            <div class="faq-grid">
 
-    <!-- Website Footer -->
-    <footer>
-        <p>&copy; 2026 BeeReady. All rights reserved.</p>
+                <article class="faq-card">
+
+                    <h3>What is BeeReady?</h3>
+
+                    <p>
+                        BeeReady is a South African wellness business
+                        offering snap-pack honey sachets infused with
+                        reishi mushroom and quercetin.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-card">
+
+                    <h3>What ingredients are used?</h3>
+
+                    <p>
+                        The main ingredients include honey, reishi
+                        mushroom and quercetin.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-card">
+
+                    <h3>Is the product easy to carry?</h3>
+
+                    <p>
+                        Yes. The snap-pack format is designed to be
+                        compact and easy to carry in a pocket,
+                        schoolbag or laptop bag.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-card">
+
+                    <h3>Where can I purchase BeeReady?</h3>
+
+                    <p>
+                        Customers can make an enquiry for more information
+                        about where BeeReady products can currently
+                        be purchased.
+                    </p>
+
+                    <a href="enquiry.html" class="text-link">
+                        Make an Enquiry
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Additional Help -->
+        <section class="faq-help">
+
+            <div>
+
+                <p class="section-label">STILL HAVE A QUESTION?</p>
+
+                <h2>Get in Touch</h2>
+
+                <p>
+                    If you need more information about BeeReady,
+                    send us an enquiry and the team can assist you.
+                </p>
+
+            </div>
+
+            <div>
+
+                <a href="enquiry.html" class="primary-button">
+                    Make an Enquiry
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         Footer
+    ========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+
+            <!-- Yellow Dot Pattern -->
+
+            <div class="footer-dots"></div>
+
+
+            <!-- Mascot -->
+
+            <img
+                src="images/general/beeready-mascot.png"
+                alt="BeeReady bee mascot"
+                class="footer-mascot">
+
+
+            <!-- Footer Navigation -->
+
+            <nav
+                class="footer-nav"
+                aria-label="Footer navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="products.html">
+                    Shop
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </nav>
+
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 BeeReady. All rights reserved.
+            </p>
+
+        </div>
+
     </footer>
 
 </body>
+
 </html>

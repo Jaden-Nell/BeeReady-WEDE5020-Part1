@@ -1,84 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
     <title>BeeReady | Home</title>
+</head>
+
 <body>
 
-    <!-- Website Header and Navigation -->
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="faq.html">FAQ</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+
+    <!-- ========================================
+         Announcement Bar
+    ========================================= -->
+
+    <div class="announcement-bar">
+        <p>Free shipping on all orders over R1000</p>
+    </div>
+
+
+    <!-- ========================================
+         Header
+    ========================================= -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a
+                href="index.html"
+                class="header-logo">
+
+                <img
+                    src="images/logo/beeready-logo.png"
+                    alt="BeeReady logo">
+
+            </a>
+
+
+            <nav
+                class="main-nav"
+                aria-label="Main navigation">
+
+                <a
+                    href="index.html"
+                    class="active">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="products.html">
+                    Shop
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Contact us
+                </a>
+
+            </nav>
+
+
+            <a
+                href="enquiry.html"
+                class="header-button">
+
+                Enquire
+
+            </a>
+
+        </div>
+
     </header>
 
-    <!-- Main Website Content -->
-    <main>
 
-        <!-- Hero Section -->
-        <section>
-            <h1>BeeReady</h1>
+    <!-- ========================================
+         Main Content
+    ========================================= -->
 
-            <p>
-                Convenient wellness, wherever life takes you.
-            </p>
+    <main class="home-main">
 
-            <p>
-                BeeReady offers easy-to-use snap pack honey sachets infused
-                with reishi mushroom and quercetin.
-            </p>
 
-            <a href="products.html">View Our Product</a>
+        <!-- ========================================
+             Hero
+        ========================================= -->
+
+        <section class="home-hero">
+
+            <div class="home-hero-overlay"></div>
+
+
+            <div class="home-hero-container">
+
+
+                <!-- Left Side -->
+
+                <div class="home-hero-left">
+
+                    <div class="home-hero-heading">
+
+                        <span>
+                            POWER YOUR
+                        </span>
+
+                        <strong>
+                            DEFENCES
+                        </strong>
+
+                        <span>
+                            NATURALLY.
+                        </span>
+
+                    </div>
+
+
+                    <div class="home-hero-copy">
+
+                        <h1>
+                            Raw Fynbos Honey &amp; Reishi Mushroom Powder
+                        </h1>
+
+                        <p>
+                            A powerful blend of raw Fynbos honey,
+                            Vitamin C, Quercetin and Reishi Mushroom
+                            to support your immune system, energy
+                            and daily wellness.
+                        </p>
+
+
+                       <a
+    href="products.html"
+    class="home-hero-button">
+
+    SHOP SNAP PACKS
+
+</a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Product Image -->
+
+                <div class="home-hero-right">
+
+                    <img
+                        src="images/products/beeready-product-feature.png"
+                        alt="BeeReady Immune snap pack">
+
+                </div>
+
+
+            </div>
+
         </section>
 
-        <!-- About BeeReady Section -->
-        <section>
-            <h2>What is BeeReady?</h2>
 
-            <p>
-                BeeReady is a South African wellness business offering
-                convenient snap pack honey sachets designed to be easy
-                to carry and use while on the go.
-            </p>
+        <!-- ========================================
+             About Section
+        ========================================= -->
 
-            <p>
-                The product combines honey with reishi mushroom and
-                quercetin and is marketed as a product that supports
-                general wellness and immune health.
-            </p>
+        <section class="home-about">
 
-            <a href="about.html">Learn More About BeeReady</a>
+            <div class="home-about-heading">
+
+                <p class="section-label">
+                    ABOUT THE BRAND
+                </p>
+
+                <h2>
+                    What is BeeReady?
+                </h2>
+
+            </div>
+
+
+            <div class="home-about-card">
+
+                <p>
+                    BeeReady is a South African wellness business
+                    offering convenient snap pack honey sachets
+                    designed to be easy to carry and use while
+                    on the go.
+                </p>
+
+                <p>
+                    The product combines honey with reishi mushroom
+                    and quercetin and is marketed as a product that
+                    supports general wellness and immune health.
+                </p>
+
+                <a
+                    href="about.html"
+                    class="text-link">
+
+                    Learn More About BeeReady
+
+                </a>
+
+            </div>
+
         </section>
 
-        <!-- Product Section -->
-<!-- Product Section -->
-<section>
-    <h2>Simple. Convenient. Ready When You Are.</h2>
 
-    <img src="images/products/beeready-product.png"
-         alt="BeeReady honey snap pack product">
+        <!-- ========================================
+             Product Section
+        ========================================= -->
 
-    <p>
-        The BeeReady snap pack can easily be carried in a
-        pocket, schoolbag or laptop bag, making it convenient
-        for everyday use.
-    </p>
+        <section class="home-product">
 
-    <a href="products.html">Explore the Product</a>
-</section>
+            <div class="home-product-image">
+
+                <img
+                    src="images/products/beeready-product.png"
+
+                    srcset="
+                        images/products/beeready-product-small.png 400w,
+                        images/products/beeready-product-medium.png 800w,
+                        images/products/beeready-product.png 1000w
+                    "
+
+                    sizes="
+                        (max-width: 480px) 92vw,
+                        (max-width: 768px) 90vw,
+                        45vw
+                    "
+
+                    alt="BeeReady honey snap pack product">
+
+            </div>
+
+
+            <div class="home-product-content">
+
+                <p class="section-label">
+                    THE PRODUCT
+                </p>
+
+                <h2>
+                    Simple. Convenient.
+                    Ready When You Are.
+                </h2>
+
+                <p>
+                    The BeeReady snap pack can easily be carried
+                    in a pocket, schoolbag or laptop bag, making
+                    it convenient for everyday use.
+                </p>
+
+                <p>
+                    BeeReady combines honey with reishi mushroom
+                    and quercetin in a compact snap-pack format.
+                </p>
+
+                <a
+                    href="products.html"
+                    class="dark-button">
+
+                    Explore the Product
+
+                </a>
+
+            </div>
+
+        </section>
+
 
     </main>
 
-    <!-- Website Footer -->
-    <footer>
-        <p>&copy; 2026 BeeReady. All rights reserved.</p>
+
+    <!-- ========================================
+         Footer
+    ========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-dots"></div>
+
+            <img
+                src="images/general/beeready-mascot.png"
+                alt="BeeReady bee mascot"
+                class="footer-mascot">
+
+
+            <nav
+                class="footer-nav"
+                aria-label="Footer navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="products.html">Shop</a>
+
+                <a href="faq.html">FAQ</a>
+
+                <a href="contact.html">Contact Us</a>
+
+            </nav>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 BeeReady. All rights reserved.
+            </p>
+
+        </div>
+
     </footer>
 
+
 </body>
+
 </html>

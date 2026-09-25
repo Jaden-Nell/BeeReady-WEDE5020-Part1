@@ -2,74 +2,74 @@
 
 ## Student Information
 
-- Name: [Your Full Name]
-- Student Number: [Your Student Number]
+- Name: Jaden Nell
+- Student Number: ST10502027
 - Module: WEDE5020
-- Project: Part 1 - Building the Foundation
+- Project: BeeReady Website
+- Current Phase: Part 2 - CSS Styling and Responsive Design
 
-## Project Overview
 
-This project involves the planning and development of a new website for BeeReady, a South African wellness business.
+---
 
-BeeReady offers convenient snap-pack honey sachets infused with reishi mushroom and quercetin. The existing BeeReady website currently provides limited information, and this project aims to create a more complete online presence for the business.
+# Project Overview
 
-Part 1 of the project focuses on research, planning, website structure, content organisation and foundational HTML development.
+This project involves the planning, development and improvement of a website for BeeReady, a South African wellness business.
 
-## Website Goals
+BeeReady offers convenient snap-pack honey sachets containing ingredients such as raw Fynbos honey, Reishi mushroom, Vitamin C and Quercetin.
 
-The website aims to:
+The purpose of the website is to create a more complete and professional online presence for BeeReady while providing users with clear information about the brand, product, ingredients and how to make an enquiry.
 
-- Provide visitors with clear information about BeeReady.
-- Introduce the BeeReady product and its main ingredients.
-- Make product information easy to find.
-- Allow visitors to make enquiries.
+The project is developed in different stages.
+
+- Part 1 focused on planning, research, website structure and foundational HTML.
+- Part 2 focuses on CSS styling, layout, visual design, responsiveness and usability.
+- Future development will include additional functionality and improvements.
+
+
+---
+
+# Website Goals
+
+The BeeReady website aims to:
+
+- Create a professional online presence for BeeReady.
+- Provide clear information about the BeeReady brand.
+- Introduce and explain the BeeReady product.
+- Provide information about the ingredients used in the product.
+- Make the website simple and easy to navigate.
+- Allow visitors to make product enquiries.
 - Provide clear contact information.
-- Create simple and consistent navigation between website pages.
-- Establish a foundation that can be developed further in Parts 2 and 3.
+- Create a responsive website that works across desktop, tablet and mobile devices.
+- Build a strong foundation for future website development.
 
-## Website Pages
 
-The website currently contains six pages:
+---
+
+# Website Pages
+
+The website currently contains six main pages:
 
 1. Home - `index.html`
 2. About - `about.html`
-3. Products - `products.html`
+3. Shop / Products - `products.html`
 4. FAQ - `faq.html`
 5. Enquiry - `enquiry.html`
 6. Contact - `contact.html`
 
-## Sitemap
 
-Home (`index.html`)
+---
 
-- About (`about.html`)
-- Products (`products.html`)
-- FAQ (`faq.html`)
-- Enquiry (`enquiry.html`)
-- Contact (`contact.html`)
-
-A visual sitemap has also been created as part of the Part 1 project documentation.
-
-## Folder Structure
+# Sitemap
 
 ```text
-BeeReady/
+Home
 │
-├── css/
-│   └── style.css
+├── About
 │
-├── images/
-│   ├── general/
-│   ├── logo/
-│   └── products/
+├── Shop
 │
-├── js/
-│   └── script.js
+├── FAQ
 │
-├── index.html
-├── about.html
-├── products.html
-├── faq.html
-├── enquiry.html
-├── contact.html
-└── README.md
+├── Enquiry
+│
+└── Contact
