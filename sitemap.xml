@@ -1,0 +1,42 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    BeeReady Website
+    WEDE5020 - Part 3
+    XML Sitemap
+-->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://YOUR-SITE.netlify.app/</loc>
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://YOUR-SITE.netlify.app/about.html</loc>
+    </url>
+
+    <!-- Products / Shop Page -->
+    <url>
+        <loc>https://YOUR-SITE.netlify.app/products.html</loc>
+    </url>
+
+    <!-- Frequently Asked Questions -->
+    <url>
+        <loc>https://YOUR-SITE.netlify.app/faq.html</loc>
+    </url>
+
+    <!-- Product Enquiry Page -->
+    <url>
+        <loc>https://YOUR-SITE.netlify.app/enquiry.html</loc>
+    </url>
+
+    <!-- General Contact Page -->
+    <url>
+        <loc>https://YOUR-SITE.netlify.app/contact.html</loc>
+    </url>
+
+</urlset>

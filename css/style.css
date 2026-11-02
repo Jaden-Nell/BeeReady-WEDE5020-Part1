@@ -2228,17 +2228,11 @@ section + section {
         text-align: center;
     }
 
-/* =========================================================
-   BEEREADY - WEDE5020 PART 3
-   JavaScript Interactivity & Form Enhancements
-
-   IMPORTANT:
-   Keep all original Part 2 CSS above this section.
-========================================================= */
-
+}
 
 /* =========================================================
-   1. ACCESSIBILITY
+   WEDE5020 - PART 3: progressive enhancements
+   Appended rather than changing the Part 2 visual foundation.
 ========================================================= */
 
 .skip-link {
@@ -2246,32 +2240,16 @@ section + section {
     z-index: 2000;
     top: -90px;
     left: 1rem;
-    padding: 0.8rem 1rem;
+    padding: .8rem 1rem;
     color: #000;
     background: var(--yellow);
     border: 2px solid #000;
 }
+.skip-link:focus { top: 1rem; }
 
-.skip-link:focus {
-    top: 1rem;
-}
+.menu-toggle { display: none; }
 
-
-/* =========================================================
-   2. MOBILE NAVIGATION
-========================================================= */
-
-/* Hidden on desktop and before JavaScript loads */
-
-.menu-toggle {
-    display: none;
-}
-
-
-/* =========================================================
-   3. INTERACTIVE FAQ ACCORDION
-========================================================= */
-
+/* FAQ: accessible disclosure controls (visible answers without JavaScript). */
 .faq-card .faq-question {
     width: 100%;
     border: 0;
@@ -2283,9 +2261,7 @@ section + section {
     text-align: left;
     padding-right: 2rem;
     position: relative;
-    cursor: pointer;
 }
-
 .faq-card .faq-question::after {
     content: '+';
     position: absolute;
@@ -2295,38 +2271,13 @@ section + section {
     font-size: 1.7rem;
     line-height: 1;
 }
+.faq-card .faq-question[aria-expanded="true"]::after { content: '−'; }
+.faq-card .faq-question:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+.faq-answer[hidden] { display: none; }
+.faq-answer p { margin-bottom: .6rem; }
+.faq-card.is-enhanced:hover { transform: none; }
 
-.faq-card .faq-question[aria-expanded="true"]::after {
-    content: '\2212';
-}
-
-.faq-card .faq-question:focus-visible {
-    outline: 3px solid var(--yellow);
-    outline-offset: 4px;
-}
-
-.faq-answer[hidden] {
-    display: none;
-}
-
-.faq-answer p {
-    margin-bottom: 0.6rem;
-}
-
-.faq-card.is-enhanced:hover {
-    transform: none;
-}
-
-
-/* =========================================================
-   4. INTERACTIVE PRODUCT IMAGE GALLERY
-========================================================= */
-
-.shop-product-image {
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Accessible, content-aware image gallery */
 .gallery-main {
     display: block;
     width: 100%;
@@ -2336,523 +2287,308 @@ section + section {
     position: relative;
     cursor: zoom-in;
 }
-
-.gallery-main img {
-    margin-inline: auto;
-}
-
+.gallery-main img { margin-inline: auto; }
 .gallery-open-hint {
     position: absolute;
-    bottom: 0.4rem;
+    bottom: .4rem;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 0.85rem;
+    font-size: .85rem;
     font-weight: 700;
-    padding: 0.3rem 0.6rem;
+    padding: .3rem .6rem;
     border-radius: 1rem;
     background: #000;
     color: #fff;
 }
+.gallery-thumbnails { display: flex; justify-content: center; align-items: center; gap: .8rem; margin-top: 1rem; }
+.gallery-thumb { border: 2px solid transparent; border-radius: .6rem; padding: .3rem; background: #fff; width: 78px; height: 78px; display: grid; place-items: center; }
+.gallery-thumb img { width: 65px; height: 60px; object-fit: contain; }
+.gallery-thumb.is-selected { border-color: #000; box-shadow: 0 0 0 2px var(--yellow); }
+.gallery-main:focus-visible,.gallery-thumb:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+.gallery-dialog { inset: 0; margin: auto; max-width: min(92vw, 850px); max-height: 94vh; border: 2px solid var(--yellow); border-radius: 1rem; background: var(--dark); color: #fff; padding: 1.3rem; }
+.gallery-dialog::backdrop { background: rgba(0,0,0,.82); }
+.gallery-dialog-inner { display: grid; grid-template-columns: 45px minmax(0,1fr) 45px; align-items: center; gap: .5rem; }
+.gallery-large-image { grid-column: 2; grid-row: 2; width: 100%; max-height: 70vh; object-fit: contain; }
+.gallery-close { grid-column: 3; grid-row: 1; justify-self: end; }
+.gallery-prev { grid-column: 1; grid-row: 2; }
+.gallery-next { grid-column: 3; grid-row: 2; }
+.gallery-caption { grid-column: 1 / -1; grid-row: 3; text-align: center; margin: .5rem 0 0; }
+.gallery-close,.gallery-prev,.gallery-next { background: var(--yellow); color: #000; border: 0; border-radius: .5rem; width: 42px; height: 42px; font-size: 2rem; line-height: 1; }
+.gallery-close:focus-visible,.gallery-prev:focus-visible,.gallery-next:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
 
-.gallery-thumbnails {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
-    margin-top: 1rem;
-}
+/* Dynamic ingredient search and sort */
+.ingredient-controls { display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end; gap: 1.2rem; margin: 2rem auto 1rem; max-width: 780px; }
+.ingredient-search-field { flex: 2 1 240px; }
+.ingredient-sort-field { flex: 1 1 175px; }
+.ingredient-controls label { display: block; color: #fff; font-weight: 700; margin-bottom: .5rem; }
+.ingredient-controls input,.ingredient-controls select { width: 100%; min-height: 46px; border: 2px solid var(--yellow); border-radius: .55rem; padding: .65rem 1rem; background: #fff; color: #000; }
+.ingredient-controls :is(input,select):focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.ingredient-results { text-align: center; color: #fff; margin-bottom: 3rem; }
+.ingredient-empty { color: #fff; text-align: center; grid-column: 1 / -1; padding: 1.5rem; }
+.power-card[hidden] { display: none; }
 
-.gallery-thumb {
-    border: 2px solid transparent;
-    border-radius: 0.6rem;
-    padding: 0.3rem;
-    background: #fff;
-    width: 78px;
-    height: 78px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-}
-
-.gallery-thumb img {
-    width: 65px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.gallery-thumb.is-selected {
-    border-color: #000;
-    box-shadow: 0 0 0 2px var(--yellow);
-}
-
-.gallery-main:focus-visible,
-.gallery-thumb:focus-visible {
-    outline: 3px solid var(--yellow);
-    outline-offset: 4px;
-}
-
-
-/* =========================================================
-   5. PRODUCT LIGHTBOX
-========================================================= */
-
-.gallery-dialog {
-    inset: 0;
-    margin: auto;
-    max-width: min(92vw, 850px);
-    max-height: 94vh;
-    border: 2px solid var(--yellow);
-    border-radius: 1rem;
-    background: var(--dark);
-    color: #fff;
-    padding: 1.3rem;
-}
-
-.gallery-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.82);
-}
-
-.gallery-dialog-inner {
-    display: grid;
-    grid-template-columns: 45px minmax(0, 1fr) 45px;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.gallery-large-image {
-    grid-column: 2;
-    grid-row: 2;
-    width: 100%;
-    max-height: 70vh;
-    object-fit: contain;
-}
-
-.gallery-close {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
-}
-
-.gallery-prev {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.gallery-next {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.gallery-caption {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    text-align: center;
-    margin: 0.5rem 0 0;
-}
-
-.gallery-close,
-.gallery-prev,
-.gallery-next {
-    background: var(--yellow);
-    color: #000;
-    border: 0;
-    border-radius: 0.5rem;
-    width: 42px;
-    height: 42px;
-    font-size: 2rem;
-    line-height: 1;
-    cursor: pointer;
-}
-
-.gallery-close:focus-visible,
-.gallery-prev:focus-visible,
-.gallery-next:focus-visible {
-    outline: 3px solid #fff;
-    outline-offset: 2px;
-}
-
-
-/* =========================================================
-   6. DYNAMIC INGREDIENT SEARCH & SORTING
-========================================================= */
-
-.ingredient-controls {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    gap: 1.2rem;
-    margin: 2rem auto 1rem;
-    max-width: 780px;
-}
-
-.ingredient-search-field {
-    flex: 2 1 240px;
-}
-
-.ingredient-sort-field {
-    flex: 1 1 175px;
-}
-
-.ingredient-controls label {
-    display: block;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.ingredient-controls input,
-.ingredient-controls select {
-    width: 100%;
-    min-height: 46px;
-    border: 2px solid var(--yellow);
-    border-radius: 0.55rem;
-    padding: 0.65rem 1rem;
-    background: #fff;
-    color: #000;
-}
-
-.ingredient-controls input:focus-visible,
-.ingredient-controls select:focus-visible {
-    outline: 3px solid #fff;
-    outline-offset: 3px;
-}
-
-.ingredient-results {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 3rem;
-}
-
-.ingredient-empty {
-    color: #fff;
-    text-align: center;
-    grid-column: 1 / -1;
-    padding: 1.5rem;
-}
-
-.power-card[hidden] {
-    display: none;
-}
-
-
-/* =========================================================
-   7. GENERAL CONTACT FORM LAYOUT
-========================================================= */
-
-.contact-side {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contact-form-card h2 {
-    font-size: clamp(1.5rem, 3vw, 2.1rem);
-    margin-bottom: 0.7rem;
-}
-
-.contact-form-card .form-group {
-    margin-bottom: 1rem;
-}
-
-.form-instructions,
-.form-privacy {
-    color: #4b4b4b;
-    font-size: 0.92rem;
-    margin-bottom: 1.1rem;
-}
-
-
-/* =========================================================
-   8. FORM VALIDATION
-========================================================= */
-
-.field-error {
-    display: block;
-    font-size: 0.85rem;
-    color: #ad2222;
-    min-height: 0;
-    line-height: 1.4;
-    margin-top: 0.25rem;
-}
-
-.form-group [aria-invalid="true"] {
-    border-color: #ad2222;
-    box-shadow: 0 0 0 2px rgba(173, 34, 34, 0.15);
-}
-
-.form-status {
-    margin-top: 1rem;
-    font-size: 0.96rem;
-    font-weight: 700;
-    outline: none;
-}
-
-.form-status.is-success {
-    color: #145c30;
-    padding: 0.8rem 1rem;
-    background: #e7f7e8;
-    border-left: 4px solid #145c30;
-}
-
-.form-status.is-error {
-    color: #7b1919;
-    padding: 0.8rem 1rem;
-    background: #ffeded;
-    border-left: 4px solid #a52c2c;
-}
-
-.form-submit:disabled {
-    cursor: progress;
-    opacity: 0.65;
-    transform: none;
-}
-
-
-/* =========================================================
-   9. SPAM PROTECTION
-========================================================= */
-
-.honeypot {
-    position: absolute !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden !important;
-    clip-path: inset(50%);
-    white-space: nowrap;
-}
-
-
-/* =========================================================
-   10. OPTIONAL EMAIL DRAFT BUTTON
-========================================================= */
-
-.form-secondary {
-    display: inline-block;
-    margin: 0.65rem 0 0 0.7rem;
-    padding: 0.85rem 1rem;
-    background: #fff;
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.form-secondary[hidden] {
-    display: none;
-}
-
-.form-secondary:focus-visible {
-    outline: 3px solid var(--yellow);
-    outline-offset: 2px;
-}
-
-
-/* =========================================================
-   11. MOBILE AND TABLET ENHANCEMENTS
-========================================================= */
+/* Two real forms with JS field-level feedback */
+.contact-side { display: flex; flex-direction: column; gap: 1.5rem; }
+.contact-form-card h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: .7rem; }
+.contact-form-card .form-group { margin-bottom: 1rem; }
+.form-instructions, .form-privacy { color: #4b4b4b; font-size: .92rem; margin-bottom: 1.1rem; }
+.field-error { display: block; font-size: .85rem; color: #ad2222; min-height: 0; line-height: 1.4; margin-top: .25rem; }
+.form-group [aria-invalid="true"] { border-color: #ad2222; box-shadow: 0 0 0 2px rgba(173,34,34,.15); }
+.form-status { margin-top: 1rem; font-size: .96rem; font-weight: 700; outline: none; }
+.form-status.is-success { color: #145c30; padding: .8rem 1rem; background: #e7f7e8; border-left: 4px solid #145c30; }
+.form-status.is-error { color: #7b1919; padding: .8rem 1rem; background: #ffeded; border-left: 4px solid #a52c2c; }
+.form-submit:disabled { cursor: progress; opacity: .65; transform: none; }
+.honeypot { position: absolute !important; height: 1px !important; width: 1px !important; overflow: hidden !important; clip-path: inset(50%); white-space: nowrap; }
 
 @media (max-width: 768px) {
+    .js .site-header { padding: .9rem 5%; }
+    .js .header-container { display: grid; grid-template-columns: 1fr auto; justify-items: stretch; gap: .8rem; align-items: center; }
+    .js .header-logo { grid-column: 1; grid-row: 1; justify-content: flex-start; }
+    .js .menu-toggle { display: flex; grid-column: 2; grid-row: 1; align-items: center; gap: .7rem; background: #000; border: 2px solid var(--yellow); border-radius: .4rem; color: var(--yellow); padding: .55rem .7rem; font-weight: 700; }
+    .js .menu-toggle:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+    .js .menu-toggle-lines { display: block; width: 18px; height: 12px; border-top: 2px solid currentColor; border-bottom: 2px solid currentColor; position: relative; }
+    .js .menu-toggle-lines::after { content: ''; position: absolute; left: 0; top: 4px; width: 100%; border-top: 2px solid currentColor; }
+    .js .main-nav { display: none; grid-column: 1 / -1; grid-row: 2; width: 100%; height: auto; align-items: stretch; flex-direction: column; gap: 0; border-top: 1px solid #514000; padding: .4rem 0; }
+    .js .main-nav.menu-open { display: flex; }
+    .js .main-nav a { padding: .85rem .5rem; font-size: 1rem; }
+    .js .main-nav a.active { background: #26200a; }
+    .js .header-button { grid-column: 1 / -1; justify-self: stretch; width: 100%; }
+    .gallery-dialog { padding: .7rem; }
+    .gallery-dialog-inner { grid-template-columns: 35px minmax(0,1fr) 35px; gap: .2rem; }
+    .gallery-close,.gallery-prev,.gallery-next { width: 34px; height: 38px; }
+    .gallery-large-image { max-height: 65vh; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
 
-    .js .site-header {
-        padding: 0.9rem 5%;
+/* Product image and thumbnail controls stack vertically inside the original feature area. */
+.shop-product-image { flex-direction: column; align-items: center; }
+
+/* Small visual transitions for JavaScript-driven interactions. */
+@keyframes bee-menu-reveal { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes bee-answer-reveal { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 768px) { .js .main-nav.menu-open { animation: bee-menu-reveal .22s ease-out both; } }
+.faq-card.is-enhanced .faq-answer:not([hidden]) { animation: bee-answer-reveal .18s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .js .main-nav.menu-open, .faq-card.is-enhanced .faq-answer:not([hidden]) { animation: none; }
+}
+
+.form-secondary { display: inline-block; margin: .65rem 0 0 .7rem; padding: .85rem 1rem; background: #fff; border: 1px solid #000; border-radius: .5rem; color: #000; font-weight: 700; }
+.form-secondary[hidden] { display: none; }
+.form-secondary:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+@media (max-width: 480px) { .form-secondary { margin: .7rem 0 0; width: 100%; } }
+
+/* =========================================================
+   WEDE5020 PART 3 - FINAL HEADER AND NAVIGATION FIX
+   Preserves the Part 2 header on desktop.
+   On mobile, uses an icon-only hamburger menu.
+========================================================= */
+
+/* No visible "Skip to main content" text anywhere. */
+.skip-link,
+.skip-link:focus {
+    display: none !important;
+}
+
+/* Hide the literal "Menu" label, but retain its accessible button label. */
+.menu-toggle-label {
+    display: none !important;
+}
+
+/* Desktop: original Part 2 single-row header. */
+@media (min-width: 769px) {
+    .site-header {
+        padding: 0 5%;
     }
 
-    .js .header-container {
+    .site-header .header-container {
         display: grid;
-        grid-template-columns: 1fr auto;
-        justify-items: stretch;
-        gap: 0.8rem;
+        grid-template-columns: minmax(110px, 180px) minmax(0, 1fr) minmax(110px, 180px);
+        min-height: 92px;
+        gap: 0;
         align-items: center;
+        justify-items: stretch;
     }
 
-    .js .header-logo {
+    .site-header .header-logo {
         grid-column: 1;
         grid-row: 1;
-        justify-content: flex-start;
+        justify-self: start;
     }
 
-    /* Hamburger Button */
+    .site-header .menu-toggle {
+        display: none !important;
+    }
 
-    .js .menu-toggle {
-        display: flex;
+    .site-header .main-nav,
+    .js .site-header .main-nav {
         grid-column: 2;
         grid-row: 1;
+        display: flex;
+        height: 92px;
+        width: 100%;
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: clamp(0.85rem, 2vw, 3rem);
+    }
+
+    .site-header .main-nav a {
+        display: flex;
         align-items: center;
-        gap: 0.7rem;
+        white-space: nowrap;
+        font-size: clamp(0.91rem, 1.08vw, 1.1rem);
+    }
+
+    .site-header .header-button {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+        white-space: nowrap;
+        width: auto;
+        min-width: 130px;
+    }
+}
+
+/* At 769-900px, keep all five navigation links within the header. */
+@media (min-width: 769px) and (max-width: 900px) {
+    .site-header .header-container {
+        grid-template-columns: 115px minmax(0, 1fr) 118px;
+    }
+    .site-header .main-nav {
+        gap: 0.75rem;
+    }
+    .site-header .main-nav a {
+        font-size: 0.88rem;
+    }
+    .site-header .header-button {
+        min-width: 105px;
+        padding: 0.6rem 0.75rem;
+    }
+}
+
+/* Phones and tablets: compact logo, Enquire and icon-only menu. */
+@media (max-width: 768px) {
+    .js .site-header {
+        padding: 0.8rem 5%;
+    }
+
+    .js .site-header .header-container {
+        min-height: 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        align-items: center;
+        justify-items: stretch;
+        column-gap: 0.65rem;
+        row-gap: 0;
+    }
+
+    .js .site-header .header-logo {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+    }
+
+    .js .site-header .header-logo img {
+        width: 100px;
+    }
+
+    .js .site-header .header-button {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+        width: auto;
+        justify-self: end;
+        padding: 0.58rem 0.85rem;
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+
+    .js .site-header .menu-toggle {
+        display: flex;
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
         background: #000;
+        color: var(--yellow);
         border: 2px solid var(--yellow);
         border-radius: 0.4rem;
-        color: var(--yellow);
-        padding: 0.55rem 0.7rem;
-        font-weight: 700;
-        cursor: pointer;
     }
 
-    .js .menu-toggle:focus-visible {
-        outline: 3px solid #fff;
-        outline-offset: 3px;
-    }
-
-    /* Three Hamburger Lines */
-
-    .js .menu-toggle-lines {
+    .js .site-header .menu-toggle-lines {
         display: block;
-        width: 18px;
-        height: 12px;
+        position: relative;
+        width: 20px;
+        height: 14px;
         border-top: 2px solid currentColor;
         border-bottom: 2px solid currentColor;
-        position: relative;
     }
 
-    .js .menu-toggle-lines::after {
+    .js .site-header .menu-toggle-lines::after {
         content: '';
         position: absolute;
+        top: 5px;
         left: 0;
-        top: 4px;
         width: 100%;
         border-top: 2px solid currentColor;
     }
 
-    /* Menu stays closed until clicked */
-
-    .js .main-nav {
+    .js .site-header .main-nav {
         display: none;
         grid-column: 1 / -1;
         grid-row: 2;
-        width: 100%;
         height: auto;
-        align-items: stretch;
-        flex-direction: column;
-        gap: 0;
-        border-top: 1px solid #514000;
+        width: 100%;
+        margin-top: 0.65rem;
         padding: 0.4rem 0;
+        border-top: 1px solid #514000;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
     }
 
-    .js .main-nav.menu-open {
+    .js .site-header .main-nav.menu-open {
         display: flex;
     }
 
-    .js .main-nav a {
-        padding: 0.85rem 0.5rem;
+    .js .site-header .main-nav a {
+        display: block;
+        padding: 0.7rem 0.5rem;
         font-size: 1rem;
+        white-space: normal;
     }
 
-    .js .main-nav a.active {
-        background: #26200a;
-    }
-
-    .js .header-button {
-        grid-column: 1 / -1;
-        justify-self: stretch;
-        width: 100%;
-    }
-
-    /* Responsive Product Lightbox */
-
-    .gallery-dialog {
-        padding: 0.7rem;
-    }
-
-    .gallery-dialog-inner {
-        grid-template-columns:
-            35px minmax(0, 1fr) 35px;
-        gap: 0.2rem;
-    }
-
-    .gallery-close,
-    .gallery-prev,
-    .gallery-next {
-        width: 34px;
-        height: 38px;
-    }
-
-    .gallery-large-image {
-        max-height: 65vh;
-    }
-
-}
-
-
-/* =========================================================
-   12. SMALL MOBILE ENHANCEMENTS
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .form-secondary {
-        margin: 0.7rem 0 0;
-        width: 100%;
-    }
-
-}
-
-
-/* =========================================================
-   13. JAVASCRIPT ANIMATIONS
-========================================================= */
-
-@keyframes bee-menu-reveal {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .js .site-header .main-nav a::after {
+        bottom: 0;
     }
 }
 
-@keyframes bee-answer-reveal {
-    from {
-        opacity: 0;
-        transform: translateY(-5px);
+@media (max-width: 360px) {
+    .js .site-header .header-container {
+        column-gap: 0.4rem;
     }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .js .site-header .header-logo img {
+        width: 87px;
     }
-}
-
-@media (max-width: 768px) {
-
-    .js .main-nav.menu-open {
-        animation: bee-menu-reveal 0.22s ease-out both;
+    .js .site-header .header-button {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.86rem;
     }
-
-}
-
-.faq-card.is-enhanced .faq-answer:not([hidden]) {
-    animation: bee-answer-reveal 0.18s ease-out both;
-}
-
-
-/* =========================================================
-   14. REDUCED MOTION ACCESSIBILITY
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
+    .js .site-header .menu-toggle {
+        width: 40px;
+        height: 40px;
     }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
-    }
-
-    .js .main-nav.menu-open,
-    .faq-card.is-enhanced .faq-answer:not([hidden]) {
-        animation: none;
-    }
-
-}
-
 }

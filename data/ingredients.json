@@ -1,0 +1,47 @@
+
+[
+  {
+    "name": "Raw Fynbos Honey",
+    "description": "Harvested from South Africa's unique floral kingdom.",
+    "image": "images/products/ingredients/honey.png",
+    "tone": "yellow",
+    "points": [
+      "Natural source of carbohydrates",
+      "Contains naturally occurring plant compounds",
+      "Convenient honey-based ingredient"
+    ]
+  },
+  {
+    "name": "Reishi Mushroom",
+    "description": "A mushroom traditionally used in wellness practices.",
+    "image": "images/products/ingredients/reishi.png",
+    "tone": "red",
+    "points": [
+      "Known scientifically as Ganoderma lucidum",
+      "Traditionally used in Asian wellness practices",
+      "Included in BeeReady's ingredient blend"
+    ]
+  },
+  {
+    "name": "Vitamin C",
+    "description": "An essential vitamin that contributes to normal immune function.",
+    "image": "images/products/ingredients/vitamin-c.png",
+    "tone": "yellow",
+    "points": [
+      "Contributes to normal immune function",
+      "Helps protect cells from oxidative stress",
+      "Contributes to normal energy-yielding metabolism"
+    ]
+  },
+  {
+    "name": "Quercetin",
+    "description": "A naturally occurring flavonoid found in various plants.",
+    "image": "images/products/ingredients/quercetin.png",
+    "tone": "red",
+    "points": [
+      "A naturally occurring plant compound",
+      "Found in foods such as onions and apples",
+      "Included as part of the BeeReady blend"
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+
+# BeeReady - WEDE5020 Part 3
+# Search Engine Crawler Instructions
+
+User-agent: *
+Allow: /
+
+# XML Sitemap
+Sitemap: https://YOUR-SITE.netlify.app/sitemap.xml

@@ -1,792 +1,243 @@
-# BeeReady Website
+BeeReady Website - WEDE5020 Portfolio of Evidence
+Student: Jaden Nell
+Module: WEDE5020 - Web Development
+Organisation: BeeReady, South Africa
+Current phase: Part 3 - Enhancing Functionality and SEO
+Part 3 documentation updated: 2 November 2026
+Repository: https://github.com/Jaden-Nell/BeeReady-WEDE5020-Part1
+Live project URL: Pending Netlify deployment
+This repository documents the development of the BeeReady website through Parts 1, 2 and 3. The project is a student website, not a claim that the official BeeReady business site has been replaced.
 
-## Student Information
+1. Project Overview
+BeeReady is a South African wellness brand offering convenient honey snap packs. The website introduces the brand, explains the product and its ingredients, answers frequent questions and gives visitors ways to enquire or send a general message.
 
-- Name: Jaden Nell
-- Student Number: ST10502027
-- Module: WEDE5020
-- Project: BeeReady Website
-- Current Phase: Part 2 - CSS Styling and Responsive Design
+The project uses HTML5 for structure, CSS3 for styling and responsive layouts, and vanilla JavaScript for interaction and dynamic content. It is designed for desktop, tablet and mobile devices.
+Project objectives
+- Provide a structured six-page website and consistent navigation.
+- Explain the BeeReady brand, product and ingredients clearly.
+- Provide separate product-enquiry and general-contact forms.
+- Improve accessibility, mobile usability and search-engine readability.
+- Demonstrate DOM manipulation, Fetch API, form validation and asynchronous submissions.
+- Prepare the site for GitHub version control and public deployment.
+2. Website Pages
+Page	File	Purpose
+Home	index.html	Introduce BeeReady and guide visitors to product information.
+About	about.html	Present the brand and its South African identity.
+Shop	products.html	Present the product, image gallery and searchable ingredients.
+FAQ	faq.html	Answer common questions using an interactive accordion.
+Enquiry	enquiry.html	Collect product, price, availability and wholesale enquiries.
+Contact	contact.html	Collect general messages and website feedback.
 
----
 
-# Project Overview
-
-This project involves the planning, development and improvement of a website for BeeReady, a South African wellness business.
-
-BeeReady offers convenient snap-pack honey products containing ingredients such as Raw Fynbos Honey, Reishi Mushroom, Vitamin C and Quercetin.
-
-The purpose of the website is to create a professional online presence for BeeReady while providing users with clear information about the brand, product, ingredients and how to make an enquiry.
-
-The website project is developed in different stages:
-
-- Part 1 focused on planning, research, website structure and foundational HTML.
-- Part 2 focuses on CSS styling, layout, visual design, responsiveness and usability.
-- Future development can include JavaScript functionality and additional website improvements.
-
----
-
-# Website Goals
-
-The BeeReady website aims to:
-
-- Create a professional online presence for BeeReady.
-- Provide clear information about the BeeReady brand.
-- Introduce and explain the BeeReady product.
-- Provide information about the ingredients used in the product.
-- Make the website simple and easy to navigate.
-- Allow visitors to make product enquiries.
-- Provide clear contact information.
-- Create a responsive website that works across desktop, tablet and mobile devices.
-- Build a strong foundation for future website development.
-
----
-
-# Website Pages
-
-The website currently contains six main pages:
-
-1. Home - `index.html`
-2. About - `about.html`
-3. Shop / Products - `products.html`
-4. FAQ - `faq.html`
-5. Enquiry - `enquiry.html`
-6. Contact - `contact.html`
-
----
-
-# Sitemap
-
-```text
-Home
-│
-├── About
-│
-├── Shop
-│
-├── FAQ
-│
-├── Enquiry
-│
-└── Contact
-```
-
-The main navigation allows users to move between all major pages of the website.
-
----
-
-# Project Folder Structure
-
-```text
+Sitemap
+Home (index.html)
+|-- About (about.html)
+|-- Shop (products.html)
+|-- FAQ (faq.html)
+|-- Enquiry (enquiry.html)
+`-- Contact (contact.html)
+3. Project Folder Structure
 BeeReady/
-│
-├── css/
-│   └── style.css
-│
-├── images/
-│   │
-│   ├── general/
-│   │   ├── about-south-africa.png
-│   │   ├── beeready-mascot.png
-│   │   └── home-hero-bg.jpg
-│   │
-│   ├── logo/
-│   │   └── beeready-logo.png
-│   │
-│   └── products/
-│       ├── beeready-product.png
-│       ├── beeready-product-small.png
-│       ├── beeready-product-medium.png
-│       ├── beeready-product-feature.png
-│       │
-│       └── ingredients/
-│           ├── honey.png
-│           ├── reishi.png
-│           ├── vitamin-c.png
-│           └── quercetin.png
-│
-├── js/
-│   └── script.js
-│
-├── screenshots/
-│   ├── desktop-home.png
-│   ├── tablet-home.png
-│   └── mobile-home.png
-│
-├── index.html
-├── about.html
-├── products.html
-├── faq.html
-├── enquiry.html
-├── contact.html
-└── README.md
-```
-
----
-
-# Technologies Used
-
-The project currently uses:
-
-- HTML5
-- CSS3
-- Visual Studio Code
-- Git
-- GitHub
-- Chrome Developer Tools
-- Live Server
-
----
-
-# Part 1 - Foundation and Planning
-
-## Part 1 Overview
-
-Part 1 focused on building the foundation of the BeeReady website.
-
-The main focus was:
-
-- Website planning
-- Content research
-- Organisation research
-- Sitemap development
-- File and folder organisation
-- Foundational HTML
-- Navigation
-- Basic page content
-- Website testing
-- Git and GitHub setup
-
----
-
-# Part 1 Features
-
-The Part 1 website included:
-
-- Six HTML pages
-- Semantic HTML structure
-- Header
-- Navigation
-- Main page content
-- Footer
-- Internal links
-- Product information
-- Product images
-- Alternative text for images
-- Enquiry form structure
-- Basic contact information
-- HTML comments
-- Organised website folders
-- Basic browser testing
-
----
-
-# Part 1 Development Timeline
-
-- 5-7 August 2026: Organisation research and content sourcing.
-- 8-9 August 2026: Sitemap, wireframes and website planning.
-- 10-12 August 2026: HTML structure and page development.
-- 13 August 2026: Navigation, link and browser testing.
-- 14 August 2026: Final review, documentation and repository preparation.
-
----
-
-# Part 1 Feedback
-
-Part 1 received a mark of **80%**.
-
-No written lecturer feedback was provided before Part 2 development started.
-
-Because no written feedback was supplied, there were no specific lecturer-requested corrections that could be implemented before beginning Part 2.
-
----
-
-# Part 1 Changelog
-
-## Initial Development
-
-- Created the BeeReady website project folder.
-- Created the required folder structure.
-- Created `css`, `images` and `js` folders.
-- Created six HTML pages.
-- Added semantic HTML structure.
-- Added header and navigation.
-- Added homepage content.
-- Added About page content.
-- Added Products page content.
-- Added FAQ page content.
-- Added Enquiry page.
-- Added Contact page.
-- Added enquiry form structure.
-- Added BeeReady product imagery.
-- Added image alternative text.
-- Added internal website links.
-- Tested all navigation links.
-- Created the website sitemap.
-- Completed content research and sourcing.
-- Created the project README.
-- Initialised Git.
-- Created the GitHub repository.
-- Pushed the project to GitHub.
-
----
-
-# Part 2 - CSS Styling and Responsive Design
-
-## Part 2 Overview
-
-Part 2 focuses on improving the visual appearance, usability and responsiveness of the BeeReady website using CSS.
-
-The HTML structure created during Part 1 was expanded and redesigned to create a more complete and professional BeeReady website.
-
-Part 2 includes:
-
-- CSS styling
-- Typography
-- Colour styling
-- Layout design
-- Flexbox
-- CSS Grid
-- Hover states
-- Focus states
-- Responsive layouts
-- Media queries
-- Responsive images
-- Browser testing
-- Device testing
-
----
-
-# Part 2 Design Direction
-
-The website follows a bold BeeReady brand style.
-
-The design uses:
-
-- Black backgrounds
-- Bright yellow accent colours
-- White text
-- Bold typography
-- Bee and honey-inspired visual elements
-- Product imagery
-- Strong call-to-action buttons
-- Clean spacing
-- Responsive layouts
-
----
-
-# Colour Palette
-
-The main colours used in the BeeReady website include:
-
-- Black - primary background colour
-- Yellow - main BeeReady accent colour
-- White - primary text and contrast colour
-- Red - supporting ingredient card accent
-- Blue - supporting ingredient heading accent
-- Cream - light page background colour
-
----
-
-# Typography
-
-The website uses a clean sans-serif font stack:
-
-```css
-font-family: Arial, Helvetica, sans-serif;
-```
-
-Typography styling includes:
-
-- Different heading sizes
-- Bold font weights
-- Line-height adjustments
-- Italic heading styles
-- Letter spacing
-- Responsive font sizing using `clamp()`
-
----
-
-# Part 2 Homepage Improvements
-
-The homepage was redesigned to include:
-
-- BeeReady announcement bar
-- Branded black navigation header
-- BeeReady logo
-- Active navigation indicator
-- Enquiry button
-- Full-width hero section
-- Hero background image
-- Large promotional heading
-- Product feature image
-- Shop call-to-action button
-- About BeeReady section
-- Product section
-- Responsive layout
-- Branded footer
-
----
-
-# Part 2 About Page Improvements
-
-The About page was redesigned to include:
-
-- BeeReady branded header
-- Large visual image section
-- South African brand focus
-- "Proudly South African" heading
-- Two-column desktop layout
-- Responsive single-column mobile layout
-- Improved spacing
-- Improved typography
-
----
-
-# Part 2 Shop / Products Page Improvements
-
-The Products page was redesigned to include:
-
-- Central product feature
-- BeeReady product artwork
-- Product title
-- Product description
-- Product enquiry call-to-action
-- Ingredient information section
-- Responsive product layout
-
----
-
-# Product Ingredients Section
-
-The product page includes four ingredient cards.
-
-## Raw Fynbos Honey
-
-Harvested from South Africa's unique floral kingdom.
-
-- Natural energy source
-- Rich in antioxidants
-- Supports overall wellness
-
-## Reishi Mushroom
-
-Known as the "Mushroom of immortality".
-
-- Supports immune function
-- Helps the body adapt to stress
-- Traditionally used for wellness support
-
-## Vitamin C
-
-Essential for immune health.
-
-- Supports immune function
-- Powerful antioxidant
-- Helps protect cells from oxidative stress
-
-## Quercetin
-
-A naturally occurring plant flavonoid.
-
-- Antioxidant properties
-- Supports healthy inflammatory response
-- Complements immune support ingredients
-
----
-
-# Part 2 FAQ Page Improvements
-
-The FAQ page was redesigned using responsive cards.
-
-Improvements include:
-
-- Structured FAQ layout
-- Responsive grid
-- Hover effects
-- Enquiry call-to-action
-- Improved spacing
-- Improved readability
-
----
-
-# Part 2 Enquiry Page Improvements
-
-The Enquiry page includes a styled form with:
-
-- Full Name field
-- Email Address field
-- Phone Number field
-- Enquiry Type dropdown
-- Message textarea
-- Submit button
-
-The form includes:
-
-- Consistent spacing
-- Styled inputs
-- Focus states
-- Responsive layout
-- Accessible labels
-
----
-
-# Part 2 Contact Page Improvements
-
-The Contact page was improved with:
-
-- Contact introduction section
-- Contact information card
-- Website information
-- Product enquiry information
-- Enquiry call-to-action
-- Responsive layout
-
----
-
-# Header and Navigation
-
-The website header includes:
-
-- BeeReady logo
-- Home
-- About
-- Shop
-- FAQ
-- Contact Us
-- Enquire button
-
-The header uses:
-
-- Flexbox
-- CSS Grid
-- Hover effects
-- Active page states
-- Focus states
-- Responsive layouts
-
----
-
-# Footer
-
-The BeeReady footer includes:
-
-- BeeReady mascot
-- Yellow dot design
-- Website navigation
-- Copyright information
-- Responsive layout
-
----
-
-# CSS Techniques Used
-
-The website uses a range of CSS techniques including:
-
-- CSS reset
-- CSS variables
-- Flexbox
-- CSS Grid
-- Relative units
-- `rem`
-- Percentages
-- `clamp()`
-- Media queries
-- Pseudo-classes
-- `:hover`
-- `:focus`
-- `:active`
-- Transitions
-- Border radius
-- Box shadows
-- Background images
-- Linear gradients
-- Responsive image sizing
-
----
-
-# Responsive Design
-
-The website was designed to work across multiple screen sizes.
-
-The main breakpoints include:
-
-- Desktop: above 1024px
-- Tablet: 1024px and smaller
-- Mobile: 768px and smaller
-- Small Mobile: 480px and smaller
-
-Multi-column layouts automatically change to fewer columns or single-column layouts on smaller screens.
-
-The navigation, images, text sizes, spacing and page sections were adjusted to improve the website experience on different devices.
-
----
-
-# Responsive Images
-
-Responsive product images were implemented using the HTML `srcset` and `sizes` attributes.
-
-The following image sizes are available:
-
-- `beeready-product-small.png` - 400px
-- `beeready-product-medium.png` - 800px
-- `beeready-product.png` - 1000px
-
-Example:
-
-```html
-<img
-    src="images/products/beeready-product.png"
-    srcset="
-        images/products/beeready-product-small.png 400w,
-        images/products/beeready-product-medium.png 800w,
-        images/products/beeready-product.png 1000w
-    "
-    sizes="
-        (max-width: 480px) 92vw,
-        (max-width: 768px) 90vw,
-        45vw
-    "
-    alt="BeeReady honey snap pack product">
-```
-
-This allows the browser to choose a suitable image depending on the size of the user's device.
-
----
-
-# Responsive Testing
-
-The website was tested at multiple screen sizes using Chrome Developer Tools.
-
-Testing included:
-
-- Navigation
-- Header
-- Hero sections
-- Images
-- Text readability
-- Buttons
-- Forms
-- Product sections
-- Ingredient cards
-- Footer
-- Page spacing
-- Horizontal overflow
-- Responsive stacking
-
----
-
-# Responsive Testing Screenshots
-
-## Desktop - 1440 x 900
-
-![BeeReady desktop homepage](./screenshots/desktop-home.png)
-
-## Tablet - 768 x 1024
-
-![BeeReady tablet homepage](./screenshots/tablet-home.png)
-
-## Mobile - 390 x 844
-
-![BeeReady mobile homepage](./screenshots/mobile-home.png)
-
----
-
-# Browser Testing
-
-The website was tested using Live Server and Chrome Developer Tools.
-
-Testing included checking that:
-
-- All website pages load correctly.
-- Navigation links work.
-- Images load correctly.
-- No broken internal links are present.
-- Responsive layouts work correctly.
-- Forms display correctly.
-- Buttons and links respond correctly.
-- No major horizontal overflow occurs.
-- Content remains readable on smaller devices.
-- Page sections stack correctly on tablet and mobile screens.
-
----
-
-# Accessibility
-
-Basic accessibility considerations include:
-
-- Alternative text added to images.
-- Form fields include labels.
-- Navigation uses semantic `<nav>` elements.
-- Focus states are visible.
-- Text contrast is maintained.
-- Responsive text sizing is used.
-- Buttons and links remain readable on smaller devices.
-- Semantic HTML elements are used where appropriate.
-
----
-
-# Part 2 Changelog
-
-## CSS Setup
-
-- Linked `style.css` to all six HTML pages.
-- Added a global CSS reset.
-- Added reusable CSS colour variables.
-- Added base typography styling.
-- Added responsive image styling.
-- Added reusable button styles.
-- Added responsive page containers.
-
-## Header
-
-- Added BeeReady announcement bar.
-- Redesigned the main navigation.
-- Added BeeReady logo.
-- Added active page indicators.
-- Added hover effects.
-- Added focus states.
-- Added enquiry button.
-- Made the header responsive.
-
-## Homepage
-
-- Redesigned the homepage hero.
-- Added full-width hero background.
-- Added BeeReady product artwork.
-- Added promotional heading.
-- Added shop call-to-action.
-- Improved homepage About section.
-- Improved homepage Product section.
-- Improved spacing and layout.
-- Added responsive hero behaviour.
-
-## About Page
-
-- Redesigned the About page.
-- Added Proudly South African content section.
-- Added large visual image layout.
-- Added responsive two-column layout.
-- Added mobile single-column layout.
-- Improved typography and spacing.
-
-## Shop Page
-
-- Redesigned the Products / Shop page.
-- Added main product feature.
-- Added product enquiry button.
-- Added product ingredient section.
-- Added four responsive ingredient cards.
-- Added ingredient images.
-- Added card hover effects.
-- Improved responsive stacking.
-
-## FAQ Page
-
-- Redesigned the FAQ page.
-- Added responsive FAQ card layout.
-- Added hover effects.
-- Added enquiry call-to-action.
-- Improved text readability.
-
-## Enquiry Page
-
-- Styled enquiry form.
-- Styled form labels.
-- Styled input fields.
-- Styled dropdown menu.
-- Styled textarea.
-- Added focus states.
-- Styled submit button.
-- Improved form responsiveness.
-
-## Contact Page
-
-- Redesigned contact layout.
-- Added contact information card.
-- Added enquiry button.
-- Improved responsive layout.
-
-## Footer
-
-- Redesigned footer.
-- Added BeeReady mascot.
-- Added yellow dot pattern.
-- Added footer navigation.
-- Added copyright information.
-- Added responsive footer behaviour.
-
-## Responsive Development
-
-- Added tablet breakpoint.
-- Added mobile breakpoint.
-- Added small mobile breakpoint.
-- Converted multi-column layouts to single-column layouts when required.
-- Added responsive typography.
-- Added responsive images.
-- Added `srcset` and `sizes`.
-- Tested the website at multiple screen sizes.
-
-## Testing
-
-- Tested desktop layout at 1440 x 900.
-- Tested tablet layout at 768 x 1024.
-- Tested mobile layout at 390 x 844.
-- Tested all six website pages.
-- Tested website navigation.
-- Tested internal links.
-- Tested form layouts.
-- Tested images.
-- Checked responsive page stacking.
-- Checked for horizontal overflow.
-- Added responsive testing screenshots to the repository.
-
----
-
-# Future Development
-
-Possible future improvements include:
-
-- Functional form submission
-- Form validation
-- JavaScript interactions
-- Mobile hamburger menu
-- Product purchasing functionality
-- Shopping cart functionality
-- Checkout functionality
-- Additional animations
-- Search engine optimisation
-- Additional product pages
-- Product filtering
-- Improved interactive elements
-
----
-
-# References
-
-BeeReady. n.d. *BeeReady.* [Online].  
-Available at: https://beeready.co.za/  
-[Accessed 21 August 2026].
-
-WowBuy. n.d. *Bee Ready Immune Booster.* [Online].  
-Available at: https://wowbuy.co.za/product/bee-ready-immune-booster/  
-[Accessed 21 August 2026].
-
-New Perspective Design. 2026. *What Does a Website Cost in South Africa? 2026 Price Guide.* [Online].  
-[Accessed 21 August 2026].
-
-xneelo. n.d. *Web Hosting.* [Online].  
-Available at: https://xneelo.co.za/web-hosting/  
-[Accessed 21 August 2026].
-
-xneelo. n.d. *Domain Names.* [Online].  
-Available at: https://xneelo.co.za/domains/  
-[Accessed 21 August 2026].
-
----
-
-# Repository
-
-GitHub Repository:
-
-`https://github.com/Jaden-Nell/BeeReady-WEDE5020-Part1`
+|-- css/
+|   `-- style.css
+|-- data/
+|   `-- ingredients.json
+|-- images/
+|   |-- general/
+|   |-- logo/
+|   `-- products/
+|       `-- ingredients/
+|-- js/
+|   `-- script.js
+|-- screenshots/
+|   |-- desktop-home.png
+|   |-- tablet-home.png
+|   `-- mobile-home.png
+|-- index.html
+|-- about.html
+|-- products.html
+|-- faq.html
+|-- enquiry.html
+|-- contact.html
+|-- robots.txt
+|-- sitemap.xml
+`-- README.md
+The screenshots are evidence from Part 2; they should not be presented as final Part 3 deployment screenshots.
+4. Technologies and Development Tools
+- HTML5: semantic layout, headings, links, image descriptions and form fields.
+- CSS3: BeeReady branding, Flexbox, Grid, responsive breakpoints and focus styling.
+- JavaScript (ES6+): event listeners, DOM manipulation, filtering, sorting and validation.
+- JSON + Fetch API: ingredient information loaded from data/ingredients.json.
+- Netlify Forms (planned production backend): handles submitted form data after deployment and configuration.
+- Visual Studio Code + Live Server: editing and local HTTP testing.
+- Git and GitHub: source control and submission history.
+- Browser developer tools: responsive and console-error checks.
+No JavaScript framework is required for this version.
+5. Part 1 - Foundation and Planning
+Part 1 established the selected organisation, project proposal, sitemap, low-fidelity planning, six HTML pages, navigation, product and contact content, image assets, form structure and GitHub repository.
+
+Part 1 result: 80%. The Part 2 README recorded that no written Part 1 lecturer feedback had been supplied before Part 2 development. The initial website therefore proceeded to styling based on the existing project requirements.
+6. Part 2 - Styling and Responsive Design
+Part 2 retained the six-page site and expanded the visual design:
+- Black and bright-yellow BeeReady brand styling, with white, cream and supporting red accents.
+- Consistent header, navigation, announcement bar, mascot and footer.
+- Homepage hero, brand introduction and product call-to-action.
+- About page with a Proudly South African section.
+- Shop product artwork and four ingredient cards.
+- FAQ cards, product enquiry form and contact-information page.
+- Flexbox, CSS Grid, media queries, responsive images, hover and focus styling.
+- Responsive screenshots at 1440 x 900, 768 x 1024 and 390 x 844.
+These were the features of the submitted Part 2 version; Part 3 builds on them instead of starting a new design.
+Part 2 feedback and corrections
+Lecturer's Part 2 mark / written feedback: Not yet provided for this Part 3 documentation. Do not invent a feedback mark or correction. If feedback is received, add each actual comment below with the corresponding change and commit.
+Part 2 feedback	Correction made	Evidence / commit
+Pending lecturer feedback	Pending	Pending
+
+
+The Part 3 development also addressed a layout issue noticed during local testing: the mobile-menu label and skip-link appeared unexpectedly in the desktop header. The CSS was revised to preserve the original desktop navigation and use an icon-only hamburger on smaller screens. This was a development correction, not a claimed lecturer comment.
+7. Part 3 - Enhancing Functionality and SEO
+7.1 Interactive JavaScript features
+Mobile navigation (js/script.js)
+- Uses the Menu button at screen widths of 768px and below.
+- Opens and closes the navigation with aria-expanded state updates.
+- Supports closing the menu with Escape or by selecting a link.
+- Preserves the original full navigation on desktop.
+FAQ accordion (faq.html and js/script.js)
+- Converts existing question cards into interactive buttons and answer panels.
+- Expands/collapses answers and updates accessible attributes.
+- Keeps the original FAQ text readable when JavaScript is unavailable.
+Product image gallery and lightbox (products.html and js/script.js)
+- Allows users to select product-image thumbnails.
+- Opens the selected image in a larger modal viewer.
+- Provides previous/next controls, keyboard arrows and Escape-to-close support.
+7.2 Dynamic content and search
+Shop ingredient data: data/ingredients.json
+- Stores the four ingredient names, descriptions, images, colours and information points.
+- Uses fetch() to load JSON and JavaScript to create ingredient cards dynamically.
+- Offers live text filtering and A-Z / Z-A sorting.
+- Shows the matching-result count and a message when no items match.
+- Retains built-in HTML cards as a fallback when JSON cannot be fetched.
+The four ingredients are Raw Fynbos Honey, Reishi Mushroom, Vitamin C and Quercetin. Product copy should avoid unsupported disease-treatment or disease-prevention claims.
+7.3 Forms and validation
+Product enquiry form: enquiry.html, form name product-enquiry.
+- Collects name, email, phone, enquiry type, optional quantity and message.
+- Intended for product information, pricing, availability and stockist questions.
+General contact form: contact.html, form name general-contact.
+- Collects name, email, subject and general message.
+- Intended for general questions and feedback, not product orders.
+Shared form features:
+- HTML5 required, type, minlength, maxlength, pattern and numeric limits.
+- JavaScript validation with field-specific messages and invalid-field focus.
+- Honeypot field to reduce automated spam.
+- AJAX-style fetch() POST using URL-encoded form data.
+- In-page sending, error and server-acceptance feedback without a page reload.
+- Form markup designed for Netlify Forms detection when the site is deployed.
+Important limitations: A form passing validation does not prove that the business has received the message. Both forms must be detected and tested on Netlify, and the notification recipient must be verified. The optional email-client draft button remains disabled until a real authorised recipient address has been supplied and configured. Never insert a guessed business email address.
+7.4 On-page SEO
+- Distinct page titles and meta descriptions across all six pages.
+- Canonical link placeholders and Open Graph metadata for social sharing.
+- Relevant headings (including page-level H1 headings), readable URLs and internal navigation.
+- Descriptive image alt text and responsive layout considerations.
+- Keyword targeting in headings and page copy, without keyword stuffing.
+Keyword mapping:
+Page	Intended keyword theme
+Home	BeeReady, South African honey snap packs
+About	About BeeReady, South African wellness brand
+Shop	BeeReady ingredients, Fynbos honey, reishi mushroom
+FAQ	BeeReady FAQ, honey snap pack questions
+Enquiry	BeeReady pricing and availability enquiries
+Contact	Contact BeeReady, BeeReady general questions
+
+
+Meta keywords alone are not a substitute for useful page content. Actual search rankings are not claimed.
+7.5 Technical and off-page SEO
+- robots.txt permits crawling and points to the sitemap.
+- sitemap.xml lists the six public pages.
+- Canonical and sitemap URL placeholders must be replaced with the real deployment URL.
+- Image descriptions, local assets and responsive layouts support usability and performance.
+- HTTPS, security headers and actual page-speed results must be checked on the deployed website.
+- Backlinks, social promotion and local business listing activity require genuine external action and permission. Not yet claimed as completed.
+8. Part 3 Changelog (2 November 2026)
+File / area	Change	Status
+Six HTML pages	Added SEO tags, accessible navigation markup and JS references	Added locally
+index.html	Updated homepage metadata and navigation markup	Added locally
+about.html	Added page-specific metadata and accessible header markup	Added locally
+products.html	Added thumbnail gallery, lightbox hooks, search and sorting controls	Added locally
+faq.html	Prepared FAQ questions for dynamic accordion behaviour	Added locally
+enquiry.html	Added HTML5 constraints and a Netlify-compatible product form	Added locally
+contact.html	Added a separate general-contact form and validation markup	Added locally
+css/style.css	Added interaction, gallery, form and responsive styles; fixed header layout	Added locally
+js/script.js	Implemented interactive elements, dynamic JSON, validation and AJAX	Added locally
+data/ingredients.json	Added four ingredient records for dynamic rendering	Added locally
+robots.txt	Added crawler rules and sitemap declaration	Added locally
+sitemap.xml	Added six page URLs (temporary hostname)	Added locally
+README.md	Documented features, changes, references, testing and pending work	Updated locally
+GitHub	Commit and push Part 3 changes	Pending
+Netlify	Publish and confirm public URL	Pending
+Forms	Verify real submissions and email notification	Pending
+
+
+'Added locally' records the intended code changes made during this development session; it does not mean they have already been pushed to GitHub or tested in production.
+9. How to Run the Website Locally
+1. Open the BeeReady folder in Visual Studio Code.
+2. Check that index.html, css/style.css, js/script.js and data/ingredients.json exist.
+3. Open index.html using the Live Server extension, not just file://.
+4. Visit all six pages using the navigation.
+5. Open products.html, search for vitamin, sort A-Z and test the gallery.
+6. Open faq.html and test expanding and collapsing questions.
+7. On mobile width (390px), test the icon-only navigation.
+8. Check empty and invalid inputs on both forms; do not treat a local form attempt as a delivered submission.
+9. Open the browser developer console and check for errors.
+10. Testing Checklist and Evidence
+Test	Expected result	Evidence status
+Desktop layout	Header and page content display without overflow	Retest final local files
+Tablet and mobile layouts	Navigation and content remain usable	Retest final local files
+FAQ	Answers expand and collapse	Retest final local files
+Image gallery	Thumbnails, modal, controls and Escape work	Retest final local files
+Dynamic JSON	Ingredient data loads over HTTP	Retest with Live Server
+Search/sort	Correct filtering and ordering	Retest final local files
+Invalid enquiry	Required fields and error messages work	Retest final local files
+Invalid contact message	Required fields and error messages work	Retest final local files
+Netlify product enquiry	Submission appears in Forms dashboard	Pending deployment
+Netlify general contact	Submission appears in Forms dashboard	Pending deployment
+Email notification	Verified recipient receives message	Pending configuration
+Live SEO files	Sitemap and robots return successfully	Pending deployment
+PageSpeed/Lighthouse	Record real measured performance	Pending live test
+
+
+The Part 2 screenshots in screenshots/ are historical evidence. New Part 3 screenshots and production test records still need to be captured.
+11. GitHub, Deployment and Submission
+Existing repository: https://github.com/Jaden-Nell/BeeReady-WEDE5020-Part1
+
+After reviewing local changes in the correct Git checkout:
+git status
+git add .
+git commit -m "Part 3: add interactive features, forms and SEO"
+git push origin HEAD
+These commands are instructions, not evidence that a push has already happened. Do not upload passwords, tokens or private contact data.
+
+Deployment plan:
+1. Deploy the static site to Netlify from GitHub or by uploading the website folder.
+2. Confirm the six pages and required assets load on the public URL.
+3. Enable Forms detection, redeploy if necessary and confirm both forms appear.
+4. Configure email notifications using the verified intended recipient address.
+5. Submit one test to each form and verify it in the Netlify dashboard.
+6. Replace https://YOUR-SITE.netlify.app in all six HTML files, robots.txt and sitemap.xml with the actual HTTPS hostname; redeploy.
+7. Test canonical URLs, sitemap URLs, links, console output and performance.
+8. Record any real off-page SEO work (such as approved social promotion or backlinks), with URLs/screenshots.
+9. Push final commits and submit the GitHub repository and deployed URL to the Learning Management System.
+Production URL: [Insert actual deployed Netlify URL]
+Date of final deployment: [Add after deployment]
+Date of live form tests: [Add after successful tests]
+12. References
+The following sources informed the project. Accessed 2 November 2026 unless otherwise stated.
+1. BeeReady. n.d. BeeReady website. Available at: https://beeready.co.za/ (Part 1 research accessed 21 August 2026).
+2. WowBuy. n.d. Bee Ready Immune Booster product listing. Available at: https://wowbuy.co.za/product/bee-ready-immune-booster/ (Part 1 research accessed 21 August 2026).
+3. Mozilla Developer Network (MDN). n.d. Fetch API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+4. Mozilla Developer Network (MDN). n.d. Client-side form validation. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation
+5. Google Search Central. n.d. Learn about sitemaps. Available at: https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview
+6. Google Search Central. n.d. Introduction to robots.txt. Available at: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+7. Netlify Docs. n.d. Forms setup. Available at: https://docs.netlify.com/manage/forms/setup/
+8. Netlify Docs. n.d. Form notifications. Available at: https://docs.netlify.com/manage/forms/notifications/
+9. GitHub Docs. n.d. Adding a file to a repository. Available at: https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+10. xneelo. n.d. Web Hosting. Available at: https://xneelo.co.za/web-hosting/ (Part 1 research accessed 21 August 2026).
