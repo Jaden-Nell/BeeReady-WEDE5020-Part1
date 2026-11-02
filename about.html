@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +9,76 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
+    <!-- Part 3: Search Engine Optimisation -->
+
+    <title>About BeeReady | South African Honey Wellness Brand</title>
+
+    <meta
+        name="description"
+        content="Learn about BeeReady, a South African wellness brand offering convenient honey snap packs with reishi mushroom and quercetin for busy lifestyles.">
+
+    <meta
+        name="keywords"
+        content="BeeReady South Africa, honey snap packs, South African wellness brand, BeeReady about">
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large">
+
+    <!-- Replace URL when deployed -->
+
+    <link
+        rel="canonical"
+        href="https://YOUR-SITE.netlify.app/about.html">
+
+    <!-- Social Media SEO -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:site_name" content="BeeReady">
+
+    <meta
+        property="og:title"
+        content="About BeeReady | South African Wellness Brand">
+
+    <meta
+        property="og:description"
+        content="Discover the South African brand behind BeeReady honey snap packs and our focus on convenient everyday wellness.">
+
+    <meta
+        property="og:url"
+        content="https://YOUR-SITE.netlify.app/about.html">
+
+    <meta
+        property="og:image"
+        content="https://YOUR-SITE.netlify.app/images/products/beeready-product-feature.png">
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image">
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        href="images/logo/beeready-logo.png"
+        type="image/png">
+
+    <!-- Main Stylesheet -->
+
     <link
         rel="stylesheet"
         href="css/style.css">
 
-    <title>BeeReady | About</title>
 </head>
 
 <body>
+
+    <!-- Accessibility: Skip Navigation -->
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
 
     <!-- ========================================
@@ -44,7 +107,8 @@
 
             <a
                 href="index.html"
-                class="header-logo">
+                class="header-logo"
+                aria-label="BeeReady homepage">
 
                 <img
                     src="images/logo/beeready-logo.png"
@@ -53,10 +117,32 @@
             </a>
 
 
-            <!-- Navigation -->
+            <!-- Part 3: Mobile Navigation Toggle -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+                aria-label="Open navigation menu">
+
+                <span
+                    class="menu-toggle-lines"
+                    aria-hidden="true">
+                </span>
+
+                <span class="menu-toggle-label">
+                    Menu
+                </span>
+
+            </button>
+
+
+            <!-- Main Navigation -->
 
             <nav
                 class="main-nav"
+                id="primary-navigation"
                 aria-label="Main navigation">
 
                 <a href="index.html">
@@ -65,7 +151,8 @@
 
                 <a
                     href="about.html"
-                    class="active">
+                    class="active"
+                    aria-current="page">
                     About
                 </a>
 
@@ -89,9 +176,7 @@
             <a
                 href="enquiry.html"
                 class="header-button">
-
                 Enquire
-
             </a>
 
 
@@ -104,7 +189,7 @@
          Main Content
     ========================================= -->
 
-    <main class="about-main">
+    <main id="main-content" class="about-main">
 
 
         <!-- ========================================
@@ -120,7 +205,10 @@
 
                 <img
                     src="images/general/about-south-africa.png"
-                    alt="South African landscape displayed in a honeycomb design">
+                    alt="South African landscape displayed within a honeycomb design, representing BeeReady's South African identity"
+                    width="1000"
+                    height="1000"
+                    decoding="async">
 
             </div>
 
@@ -177,7 +265,9 @@
             <img
                 src="images/general/beeready-mascot.png"
                 alt="BeeReady bee mascot"
-                class="footer-mascot">
+                class="footer-mascot"
+                loading="lazy"
+                decoding="async">
 
 
             <!-- Footer Navigation -->
@@ -222,6 +312,15 @@
 
     </footer>
 
+
+    <!-- ========================================
+         Part 3: JavaScript
+    ========================================= -->
+
+    <script
+        src="js/script.js"
+        defer>
+    </script>
 
 </body>
 

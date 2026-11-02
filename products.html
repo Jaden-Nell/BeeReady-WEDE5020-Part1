@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +9,82 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
+    <!-- ========================================
+         PART 3: SEO
+    ========================================= -->
+
+    <title>
+        BeeReady Products | Fynbos Honey, Reishi &amp; Vitamin C
+    </title>
+
+    <meta
+        name="description"
+        content="Explore BeeReady raw Fynbos honey snap packs and learn about the ingredients: reishi mushroom, vitamin C and quercetin. Enquire about availability.">
+
+    <meta
+        name="keywords"
+        content="BeeReady products, raw Fynbos honey, reishi mushroom, vitamin C, quercetin, honey snap packs">
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large">
+
+    <!-- Replace this URL after deployment -->
+
+    <link
+        rel="canonical"
+        href="https://YOUR-SITE.netlify.app/products.html">
+
+    <!-- Social Media SEO -->
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:site_name"
+        content="BeeReady">
+
+    <meta
+        property="og:title"
+        content="BeeReady Products | Honey Snap Packs">
+
+    <meta
+        property="og:description"
+        content="Discover BeeReady honey snap packs with raw Fynbos honey, reishi mushroom, vitamin C and quercetin.">
+
+    <meta
+        property="og:url"
+        content="https://YOUR-SITE.netlify.app/products.html">
+
+    <meta
+        property="og:image"
+        content="https://YOUR-SITE.netlify.app/images/products/beeready-product-feature.png">
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image">
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        href="images/logo/beeready-logo.png"
+        type="image/png">
+
+    <!-- Main Stylesheet -->
+
     <link
         rel="stylesheet"
         href="css/style.css">
 
-    <title>BeeReady | Shop</title>
 </head>
 
 <body>
+
+    <!-- Accessibility -->
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
 
     <!-- ========================================
@@ -39,12 +108,12 @@
 
         <div class="header-container">
 
-
             <!-- Logo -->
 
             <a
                 href="index.html"
-                class="header-logo">
+                class="header-logo"
+                aria-label="BeeReady homepage">
 
                 <img
                     src="images/logo/beeready-logo.png"
@@ -53,10 +122,32 @@
             </a>
 
 
-            <!-- Main Navigation -->
+            <!-- Part 3: Mobile Menu -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+                aria-label="Open navigation menu">
+
+                <span
+                    class="menu-toggle-lines"
+                    aria-hidden="true">
+                </span>
+
+                <span class="menu-toggle-label">
+                    Menu
+                </span>
+
+            </button>
+
+
+            <!-- Navigation -->
 
             <nav
                 class="main-nav"
+                id="primary-navigation"
                 aria-label="Main navigation">
 
                 <a href="index.html">
@@ -69,7 +160,8 @@
 
                 <a
                     href="products.html"
-                    class="active">
+                    class="active"
+                    aria-current="page">
                     Shop
                 </a>
 
@@ -89,11 +181,8 @@
             <a
                 href="enquiry.html"
                 class="header-button">
-
                 Enquire
-
             </a>
-
 
         </div>
 
@@ -104,23 +193,80 @@
          Main Content
     ========================================= -->
 
-    <main class="shop-main">
+    <main id="main-content" class="shop-main">
 
 
         <!-- ========================================
-             Main Product Section
+             Product Section
         ========================================= -->
 
         <section class="shop-product">
 
 
-            <!-- Product Image -->
+            <!-- Part 3: Interactive Image Gallery -->
 
             <div class="shop-product-image">
 
-                <img
-                    src="images/products/beeready-product-feature.png"
-                    alt="BeeReady Raw Fynbos Honey and Reishi Mushroom product">
+                <!-- Main Image -->
+
+                <button
+                    class="gallery-main"
+                    type="button"
+                    data-gallery-src="images/products/beeready-product-feature.png"
+                    data-gallery-alt="BeeReady Fynbos honey and reishi snap packs"
+                    aria-label="View larger BeeReady product image">
+
+                    <img
+                        src="images/products/beeready-product-feature.png"
+                        alt="BeeReady raw Fynbos honey and reishi mushroom snap-pack product"
+                        decoding="async">
+
+                    <span class="gallery-open-hint">
+                        Click to enlarge
+                    </span>
+
+                </button>
+
+
+                <!-- Gallery Thumbnails -->
+
+                <div
+                    class="gallery-thumbnails"
+                    role="group"
+                    aria-label="Choose product image">
+
+                    <button
+                        class="gallery-thumb is-selected"
+                        type="button"
+                        data-gallery-src="images/products/beeready-product-feature.png"
+                        data-gallery-alt="BeeReady product feature image"
+                        aria-label="View product feature image"
+                        aria-pressed="true">
+
+                        <img
+                            src="images/products/beeready-product-small.png"
+                            alt=""
+                            loading="lazy">
+
+                    </button>
+
+
+                    <button
+                        class="gallery-thumb"
+                        type="button"
+                        data-gallery-src="images/products/beeready-product.png"
+                        data-gallery-alt="BeeReady honey snap packs product view"
+                        aria-label="View additional product image"
+                        aria-pressed="false">
+
+                        <img
+                            src="images/products/beeready-product-medium.png"
+                            alt=""
+                            loading="lazy">
+
+                    </button>
+
+                </div>
 
             </div>
 
@@ -141,16 +287,17 @@
                     system, energy and daily wellness.
                 </p>
 
+                <!-- Product Enquiry -->
+
                 <a
                     href="enquiry.html"
                     class="buy-button">
 
-                    BUY NOW
+                    ENQUIRE ABOUT AVAILABILITY
 
                 </a>
 
             </div>
-
 
         </section>
 
@@ -181,22 +328,98 @@
             </div>
 
 
-            <!-- Ingredient Cards -->
+            <!-- ========================================
+                 PART 3: DYNAMIC CONTENT CONTROLS
+            ========================================= -->
 
-            <div class="power-grid">
+            <div
+                class="ingredient-controls"
+                aria-label="Filter and sort ingredients">
 
 
-                <!-- ========================================
-                     Raw Fynbos Honey
-                ========================================= -->
+                <!-- Search -->
 
-                <article class="power-card power-card-yellow">
+                <div class="ingredient-search-field">
+
+                    <label for="ingredient-search">
+                        Search ingredients
+                    </label>
+
+                    <input
+                        type="search"
+                        id="ingredient-search"
+                        name="ingredient-search"
+                        placeholder="Try honey, vitamin or reishi"
+                        autocomplete="off">
+
+                </div>
+
+
+                <!-- Sorting -->
+
+                <div class="ingredient-sort-field">
+
+                    <label for="ingredient-sort">
+                        Sort ingredients
+                    </label>
+
+                    <select
+                        id="ingredient-sort"
+                        name="ingredient-sort">
+
+                        <option value="original">
+                            Original order
+                        </option>
+
+                        <option value="az">
+                            Name: A to Z
+                        </option>
+
+                        <option value="za">
+                            Name: Z to A
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dynamic Search Feedback -->
+
+            <p
+                class="ingredient-results"
+                id="ingredient-results"
+                role="status"
+                aria-live="polite">
+
+                Showing all four ingredients.
+
+            </p>
+
+
+            <!-- ========================================
+                 Ingredient Cards
+            ========================================= -->
+
+            <div
+                class="power-grid"
+                id="ingredient-grid">
+
+
+                <!-- Ingredient 1: Honey -->
+
+                <article
+                    class="power-card power-card-yellow">
 
                     <div class="ingredient-icon">
 
                         <img
                             src="images/products/ingredients/honey.png"
-                            alt="Raw Fynbos honey">
+                            alt="Raw Fynbos honey"
+                            loading="lazy"
+                            decoding="async">
 
                     </div>
 
@@ -205,8 +428,8 @@
                     </h4>
 
                     <p>
-                        Harvested from South Africa's unique floral
-                        kingdom.
+                        Harvested from South Africa's
+                        unique floral kingdom.
                     </p>
 
                     <ul>
@@ -218,17 +441,18 @@
                 </article>
 
 
-                <!-- ========================================
-                     Reishi Mushroom
-                ========================================= -->
+                <!-- Ingredient 2: Reishi -->
 
-                <article class="power-card power-card-red">
+                <article
+                    class="power-card power-card-red">
 
                     <div class="ingredient-icon">
 
                         <img
                             src="images/products/ingredients/reishi.png"
-                            alt="Reishi mushroom">
+                            alt="Reishi mushroom"
+                            loading="lazy"
+                            decoding="async">
 
                     </div>
 
@@ -237,11 +461,12 @@
                     </h4>
 
                     <p>
-                        Known as the “Mushroom of immortality”
+                        Known as the
+                        "Mushroom of immortality".
                     </p>
 
                     <ul>
-                        <li>Support immune function</li>
+                        <li>Supports immune function</li>
                         <li>Helps the body adapt to stress</li>
                         <li>Traditionally used for wellness support</li>
                     </ul>
@@ -249,17 +474,18 @@
                 </article>
 
 
-                <!-- ========================================
-                     Vitamin C
-                ========================================= -->
+                <!-- Ingredient 3: Vitamin C -->
 
-                <article class="power-card power-card-yellow">
+                <article
+                    class="power-card power-card-yellow">
 
                     <div class="ingredient-icon">
 
                         <img
                             src="images/products/ingredients/vitamin-c.png"
-                            alt="Vitamin C">
+                            alt="Vitamin C"
+                            loading="lazy"
+                            decoding="async">
 
                     </div>
 
@@ -272,7 +498,7 @@
                     </p>
 
                     <ul>
-                        <li>Support immune function</li>
+                        <li>Supports immune function</li>
                         <li>Powerful antioxidant</li>
                         <li>Helps protect cells from oxidative stress</li>
                     </ul>
@@ -280,17 +506,18 @@
                 </article>
 
 
-                <!-- ========================================
-                     Quercetin
-                ========================================= -->
+                <!-- Ingredient 4: Quercetin -->
 
-                <article class="power-card power-card-red">
+                <article
+                    class="power-card power-card-red">
 
                     <div class="ingredient-icon">
 
                         <img
                             src="images/products/ingredients/quercetin.png"
-                            alt="Quercetin">
+                            alt="Quercetin"
+                            loading="lazy"
+                            decoding="async">
 
                     </div>
 
@@ -310,11 +537,9 @@
 
                 </article>
 
-
             </div>
 
         </section>
-
 
     </main>
 
@@ -327,8 +552,7 @@
 
         <div class="footer-main">
 
-
-            <!-- Yellow Dot Pattern -->
+            <!-- Decorative Pattern -->
 
             <div class="footer-dots"></div>
 
@@ -338,7 +562,9 @@
             <img
                 src="images/general/beeready-mascot.png"
                 alt="BeeReady bee mascot"
-                class="footer-mascot">
+                class="footer-mascot"
+                loading="lazy"
+                decoding="async">
 
 
             <!-- Footer Navigation -->
@@ -369,22 +595,29 @@
 
             </nav>
 
-
         </div>
 
-
-        <!-- Copyright -->
 
         <div class="footer-bottom">
 
             <p>
-                &copy; 2026 BeeReady. All rights reserved.
+                &copy; 2026 BeeReady.
+                All rights reserved.
             </p>
 
         </div>
 
     </footer>
 
+
+    <!-- ========================================
+         PART 3: JAVASCRIPT
+    ========================================= -->
+
+    <script
+        src="js/script.js"
+        defer>
+    </script>
 
 </body>
 

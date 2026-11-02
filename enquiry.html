@@ -1,129 +1,408 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>BeeReady | Enquiry</title>
+    <!-- ========================================
+         PART 3: SEO
+    ========================================= -->
+
+    <title>
+        BeeReady Enquiry | Product Pricing &amp; Availability
+    </title>
+
+    <meta
+        name="description"
+        content="Ask BeeReady about honey snap pack products, pricing, stock availability or purchasing information using our online enquiry form.">
+
+    <meta
+        name="keywords"
+        content="BeeReady enquiry, honey snap packs availability, product pricing">
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large">
+
+    <!-- Replace URL after deployment -->
+
+    <link
+        rel="canonical"
+        href="https://YOUR-SITE.netlify.app/enquiry.html">
+
+    <!-- Social Media SEO -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:site_name" content="BeeReady">
+
+    <meta
+        property="og:title"
+        content="BeeReady Enquiry | Product Pricing &amp; Availability">
+
+    <meta
+        property="og:description"
+        content="Ask BeeReady about product pricing, availability and purchasing information.">
+
+    <meta
+        property="og:url"
+        content="https://YOUR-SITE.netlify.app/enquiry.html">
+
+    <meta
+        property="og:image"
+        content="https://YOUR-SITE.netlify.app/images/products/beeready-product-feature.png">
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image">
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        href="images/logo/beeready-logo.png"
+        type="image/png">
+
+    <!-- Main Stylesheet -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
 </head>
 
 <body>
 
-<div class="announcement-bar">
-    <p>Free shipping on all orders over R1000</p>
-</div>
+    <!-- ========================================
+         Accessibility
+    ========================================= -->
 
-<header class="site-header">
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-    <div class="header-container">
 
-        <a href="index.html" class="header-logo">
-            <img
-                src="images/logo/beeready-logo.png"
-                alt="BeeReady logo">
-        </a>
+    <!-- ========================================
+         Announcement Bar
+    ========================================= -->
 
-        <nav class="main-nav" aria-label="Main navigation">
+    <div class="announcement-bar">
 
-            <a href="index.html">Home</a>
-
-            <a href="about.html">About</a>
-
-            <a href="products.html">Shop</a>
-
-            <a href="faq.html">FAQ</a>
-
-            <a href="contact.html">Contact us</a>
-
-        </nav>
-
-        <a
-            href="enquiry.html"
-            class="header-button header-button-active">
-
-            Enquire
-
-        </a>
+        <p>
+            Free shipping on all orders over R1000
+        </p>
 
     </div>
 
-</header>
 
-    <!-- Main Website Content -->
-    <main>
+    <!-- ========================================
+         Header
+    ========================================= -->
 
-        <!-- Enquiry Page Hero -->
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- BeeReady Logo -->
+
+            <a
+                href="index.html"
+                class="header-logo"
+                aria-label="BeeReady homepage">
+
+                <img
+                    src="images/logo/beeready-logo.png"
+                    alt="BeeReady logo">
+
+            </a>
+
+
+            <!-- Part 3: Mobile Menu -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+                aria-label="Open navigation menu">
+
+                <span
+                    class="menu-toggle-lines"
+                    aria-hidden="true">
+                </span>
+
+                <span class="menu-toggle-label">
+                    Menu
+                </span>
+
+            </button>
+
+
+            <!-- Main Navigation -->
+
+            <nav
+                class="main-nav"
+                id="primary-navigation"
+                aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="products.html">
+                    Shop
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Contact us
+                </a>
+
+            </nav>
+
+
+            <!-- Active Enquiry Button -->
+
+            <a
+                href="enquiry.html"
+                class="header-button header-button-active"
+                aria-current="page">
+
+                Enquire
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         Main Content
+    ========================================= -->
+
+    <main id="main-content">
+
+
+        <!-- ========================================
+             Enquiry Hero
+        ========================================= -->
+
         <section class="page-hero">
 
-            <p class="section-label">GET IN TOUCH</p>
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
 
-            <h1>Make an Enquiry</h1>
+            <h1>
+                Make an Enquiry
+            </h1>
 
             <p>
-                Interested in BeeReady or want to know more about the product?
-                Complete the enquiry form below.
+                Interested in BeeReady or want to know
+                more about the product? Complete the
+                enquiry form below.
             </p>
 
         </section>
 
 
-        <!-- Enquiry Form Section -->
+        <!-- ========================================
+             Enquiry Form Section
+        ========================================= -->
+
         <section class="enquiry-layout">
+
+
+            <!-- Left Side: Introduction -->
 
             <div class="enquiry-intro">
 
-                <p class="section-label">ENQUIRY FORM</p>
+                <p class="section-label">
+                    ENQUIRY FORM
+                </p>
 
-                <h2>How Can We Help?</h2>
+                <h2>
+                    How Can We Help?
+                </h2>
 
                 <p>
-                    Use the form to ask about the BeeReady product,
-                    purchasing information or any other general questions.
+                    Use the form to ask about the BeeReady
+                    product, purchasing information or
+                    product availability.
                 </p>
 
             </div>
 
+
+            <!-- Right Side: Form -->
+
             <div class="form-card">
 
-                <form>
+
+                <!-- ========================================
+                     PART 3: FUNCTIONAL FORM
+
+                     Netlify-compatible form setup.
+                     JavaScript AJAX added in script.js.
+                ========================================= -->
+
+                <form
+                    id="product-enquiry-form"
+                    name="product-enquiry"
+                    action="/"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    data-ajax-form>
+
+
+                    <!-- Form identification -->
+
+                    <input
+                        type="hidden"
+                        name="form-name"
+                        value="product-enquiry">
+
+
+                    <!-- Spam Prevention -->
+
+                    <p class="honeypot">
+
+                        <label>
+                            Leave this field empty
+
+                            <input
+                                type="text"
+                                name="bot-field"
+                                tabindex="-1"
+                                autocomplete="off">
+
+                        </label>
+
+                    </p>
+
+
+                    <p class="form-instructions">
+                        Fields marked * are required.
+                        Product prices and availability
+                        will be confirmed in our reply.
+                    </p>
+
+
+                    <!-- ========================================
+                         FIELD 1: FULL NAME
+                    ========================================= -->
 
                     <div class="form-group">
-                        <label for="name">Full Name</label>
+
+                        <label for="name">
+                            Full Name *
+                        </label>
+
                         <input
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Enter your full name">
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            minlength="2"
+                            maxlength="80"
+                            required>
+
+                        <small
+                            class="field-error"
+                            id="name-error"
+                            aria-live="polite">
+                        </small>
+
                     </div>
 
 
+                    <!-- ========================================
+                         FIELD 2: EMAIL ADDRESS
+                    ========================================= -->
+
                     <div class="form-group">
-                        <label for="email">Email Address</label>
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="Enter your email address">
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            maxlength="150"
+                            required>
+
+                        <small
+                            class="field-error"
+                            id="email-error"
+                            aria-live="polite">
+                        </small>
+
                     </div>
 
 
+                    <!-- ========================================
+                         FIELD 3: PHONE NUMBER
+                    ========================================= -->
+
                     <div class="form-group">
-                        <label for="phone">Phone Number</label>
+
+                        <label for="phone">
+                            Phone Number *
+                        </label>
+
                         <input
                             type="tel"
                             id="phone"
                             name="phone"
-                            placeholder="Enter your phone number">
+                            placeholder="e.g. 082 123 4567"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            pattern="[+0-9() .-]{7,20}"
+                            title="Enter a valid phone number using 7 to 20 characters"
+                            required>
+
+                        <small
+                            class="field-error"
+                            id="phone-error"
+                            aria-live="polite">
+                        </small>
+
                     </div>
 
 
-                    <div class="form-group">
-                        <label for="enquiry-type">Enquiry Type</label>
+                    <!-- ========================================
+                         FIELD 4: ENQUIRY TYPE
+                    ========================================= -->
 
-                        <select id="enquiry-type" name="enquiry-type">
+                    <div class="form-group">
+
+                        <label for="enquiry-type">
+                            Enquiry Type *
+                        </label>
+
+                        <select
+                            id="enquiry-type"
+                            name="enquiry-type"
+                            required>
 
                             <option value="">
                                 Please select an option
@@ -134,7 +413,11 @@
                             </option>
 
                             <option value="purchase">
-                                Where to Purchase
+                                Pricing and Availability
+                            </option>
+
+                            <option value="stockist">
+                                Wholesale / Stockist Enquiry
                             </option>
 
                             <option value="general">
@@ -142,23 +425,111 @@
                             </option>
 
                         </select>
+
+                        <small
+                            class="field-error"
+                            id="enquiry-type-error"
+                            aria-live="polite">
+                        </small>
+
                     </div>
 
 
+                    <!-- ========================================
+                         FIELD 5: QUANTITY (OPTIONAL)
+                    ========================================= -->
+
                     <div class="form-group">
-                        <label for="message">Message</label>
+
+                        <label for="quantity">
+                            Approximate Quantity (Optional)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            max="100000"
+                            step="1"
+                            placeholder="e.g. 10">
+
+                        <small
+                            class="field-error"
+                            id="quantity-error"
+                            aria-live="polite">
+                        </small>
+
+                    </div>
+
+
+                    <!-- ========================================
+                         FIELD 6: MESSAGE
+                    ========================================= -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message *
+                        </label>
 
                         <textarea
                             id="message"
                             name="message"
                             rows="6"
-                            placeholder="Type your message here"></textarea>
+                            minlength="10"
+                            maxlength="2000"
+                            placeholder="Tell us what you want to know about the BeeReady product"
+                            required></textarea>
+
+                        <small
+                            class="field-error"
+                            id="message-error"
+                            aria-live="polite">
+                        </small>
+
                     </div>
 
 
-                    <button type="submit" class="form-submit">
+                    <!-- Privacy Notice -->
+
+                    <p class="form-privacy">
+                        Only share details needed for your
+                        enquiry. We do not accept payment
+                        through this form.
+                    </p>
+
+
+                    <!-- ========================================
+                         SUBMIT BUTTON
+                    ========================================= -->
+
+                    <button
+                        type="submit"
+                        class="form-submit">
+
                         Submit Enquiry
+
                     </button>
+
+
+                    <!-- ========================================
+                         PART 3: STATUS MESSAGE
+
+                         JavaScript will display:
+                         - Validation errors
+                         - Sending status
+                         - Successful submission
+                         - Submission failures
+                    ========================================= -->
+
+                    <div
+                        class="form-status"
+                        role="status"
+                        aria-live="polite"
+                        tabindex="-1">
+                    </div>
+
 
                 </form>
 
@@ -178,17 +549,19 @@
         <div class="footer-main">
 
 
-            <!-- Yellow Dot Pattern -->
+            <!-- Decorative Pattern -->
 
             <div class="footer-dots"></div>
 
 
-            <!-- Mascot -->
+            <!-- BeeReady Mascot -->
 
             <img
                 src="images/general/beeready-mascot.png"
                 alt="BeeReady bee mascot"
-                class="footer-mascot">
+                class="footer-mascot"
+                loading="lazy"
+                decoding="async">
 
 
             <!-- Footer Navigation -->
@@ -219,21 +592,29 @@
 
             </nav>
 
-
         </div>
 
-
-        <!-- Copyright -->
 
         <div class="footer-bottom">
 
             <p>
-                &copy; 2026 BeeReady. All rights reserved.
+                &copy; 2026 BeeReady.
+                All rights reserved.
             </p>
 
         </div>
 
     </footer>
+
+
+    <!-- ========================================
+         PART 3: JAVASCRIPT
+    ========================================= -->
+
+    <script
+        src="js/script.js"
+        defer>
+    </script>
 
 </body>
 

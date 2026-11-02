@@ -1,58 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
+    <title>BeeReady | Honey Snap Packs &amp; Everyday Wellness</title>
+
+    <!-- Part 3: SEO -->
+    <meta
+        name="description"
+        content="Discover BeeReady South African honey snap packs with reishi mushroom, vitamin C and quercetin. Explore ingredients and enquire about our products.">
+
+    <meta
+        name="keywords"
+        content="BeeReady honey snap packs, raw fynbos honey, South African wellness">
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large">
+
+    <!-- Update the website URL after deployment -->
+    <link
+        rel="canonical"
+        href="https://YOUR-SITE.netlify.app/">
+
+    <!-- Social Media SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BeeReady">
+
+    <meta
+        property="og:title"
+        content="BeeReady | Honey Snap Packs &amp; Everyday Wellness">
+
+    <meta
+        property="og:description"
+        content="Discover BeeReady honey snap packs and explore our ingredients, product information and convenient everyday wellness options.">
+
+    <meta
+        property="og:url"
+        content="https://YOUR-SITE.netlify.app/">
+
+    <meta
+        property="og:image"
+        content="https://YOUR-SITE.netlify.app/images/products/beeready-product-feature.png">
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image">
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="images/logo/beeready-logo.png"
+        type="image/png">
+
+    <!-- Stylesheet -->
     <link
         rel="stylesheet"
         href="css/style.css">
-
-    <title>BeeReady | Home</title>
 </head>
 
 <body>
 
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-    <!-- ========================================
-         Announcement Bar
-    ========================================= -->
-
+    <!-- Announcement Bar -->
     <div class="announcement-bar">
         <p>Free shipping on all orders over R1000</p>
     </div>
 
-
-    <!-- ========================================
-         Header
-    ========================================= -->
-
+    <!-- Header -->
     <header class="site-header">
 
         <div class="header-container">
 
             <a
                 href="index.html"
-                class="header-logo">
+                class="header-logo"
+                aria-label="BeeReady homepage">
 
                 <img
                     src="images/logo/beeready-logo.png"
                     alt="BeeReady logo">
-
             </a>
 
+            <!-- Part 3: Interactive Mobile Menu -->
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+                aria-label="Open navigation menu">
+
+                <span
+                    class="menu-toggle-lines"
+                    aria-hidden="true">
+                </span>
+
+                <span class="menu-toggle-label">
+                    Menu
+                </span>
+
+            </button>
 
             <nav
                 class="main-nav"
+                id="primary-navigation"
                 aria-label="Main navigation">
 
-                <a
-                    href="index.html"
-                    class="active">
+                <a href="index.html" class="active">
                     Home
                 </a>
 
@@ -74,41 +136,27 @@
 
             </nav>
 
-
             <a
                 href="enquiry.html"
                 class="header-button">
-
                 Enquire
-
             </a>
 
         </div>
 
     </header>
 
+    <!-- Main Content -->
+    <main id="main-content" class="home-main">
 
-    <!-- ========================================
-         Main Content
-    ========================================= -->
-
-    <main class="home-main">
-
-
-        <!-- ========================================
-             Hero
-        ========================================= -->
-
+        <!-- Hero Section -->
         <section class="home-hero">
 
             <div class="home-hero-overlay"></div>
 
-
             <div class="home-hero-container">
 
-
-                <!-- Left Side -->
-
+                <!-- Hero Text -->
                 <div class="home-hero-left">
 
                     <div class="home-hero-heading">
@@ -127,11 +175,11 @@
 
                     </div>
 
-
                     <div class="home-hero-copy">
 
                         <h1>
-                            Raw Fynbos Honey &amp; Reishi Mushroom Powder
+                            Raw Fynbos Honey &amp;
+                            Reishi Mushroom Powder
                         </h1>
 
                         <p>
@@ -141,40 +189,31 @@
                             and daily wellness.
                         </p>
 
-
-                       <a
-    href="products.html"
-    class="home-hero-button">
-
-    SHOP SNAP PACKS
-
-</a>
+                        <a
+                            href="products.html"
+                            class="home-hero-button">
+                            SHOP SNAP PACKS
+                        </a>
 
                     </div>
 
                 </div>
 
-
-                <!-- Right Product Image -->
-
+                <!-- Hero Product Image -->
                 <div class="home-hero-right">
 
                     <img
                         src="images/products/beeready-product-feature.png"
-                        alt="BeeReady Immune snap pack">
+                        alt="BeeReady honey snap pack with reishi mushroom and quercetin"
+                        fetchpriority="high">
 
                 </div>
-
 
             </div>
 
         </section>
 
-
-        <!-- ========================================
-             About Section
-        ========================================= -->
-
+        <!-- About Section -->
         <section class="home-about">
 
             <div class="home-about-heading">
@@ -188,7 +227,6 @@
                 </h2>
 
             </div>
-
 
             <div class="home-about-card">
 
@@ -208,20 +246,14 @@
                 <a
                     href="about.html"
                     class="text-link">
-
                     Learn More About BeeReady
-
                 </a>
 
             </div>
 
         </section>
 
-
-        <!-- ========================================
-             Product Section
-        ========================================= -->
-
+        <!-- Product Section -->
         <section class="home-product">
 
             <div class="home-product-image">
@@ -241,10 +273,11 @@
                         45vw
                     "
 
-                    alt="BeeReady honey snap pack product">
+                    alt="BeeReady honey snap pack product"
+                    loading="lazy"
+                    decoding="async">
 
             </div>
-
 
             <div class="home-product-content">
 
@@ -271,23 +304,16 @@
                 <a
                     href="products.html"
                     class="dark-button">
-
                     Explore the Product
-
                 </a>
 
             </div>
 
         </section>
 
-
     </main>
 
-
-    <!-- ========================================
-         Footer
-    ========================================= -->
-
+    <!-- Footer -->
     <footer class="site-footer">
 
         <div class="footer-main">
@@ -297,39 +323,51 @@
             <img
                 src="images/general/beeready-mascot.png"
                 alt="BeeReady bee mascot"
-                class="footer-mascot">
-
+                class="footer-mascot"
+                loading="lazy"
+                decoding="async">
 
             <nav
                 class="footer-nav"
                 aria-label="Footer navigation">
 
-                <a href="index.html">Home</a>
+                <a href="index.html">
+                    Home
+                </a>
 
-                <a href="about.html">About</a>
+                <a href="about.html">
+                    About
+                </a>
 
-                <a href="products.html">Shop</a>
+                <a href="products.html">
+                    Shop
+                </a>
 
-                <a href="faq.html">FAQ</a>
+                <a href="faq.html">
+                    FAQ
+                </a>
 
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">
+                    Contact Us
+                </a>
 
             </nav>
 
         </div>
 
-
         <div class="footer-bottom">
 
             <p>
-                &copy; 2026 BeeReady. All rights reserved.
+                &copy; 2026 BeeReady.
+                All rights reserved.
             </p>
 
         </div>
 
     </footer>
 
+    <!-- Part 3: JavaScript -->
+    <script src="js/script.js" defer></script>
 
 </body>
-
 </html>
